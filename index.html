@@ -77,12 +77,27 @@
     }
 
     .hero {
-      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1598511727744-5f4db7df6b8d?q=80&w=1600&auto=format&fit=crop');
-      background-size: cover;
-      background-position: center;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(255, 203, 69, 0.25), transparent 25%),
+        radial-gradient(circle at 80% 30%, rgba(255, 179, 0, 0.18), transparent 28%),
+        linear-gradient(135deg, rgba(13, 59, 42, 0.96), rgba(33, 94, 58, 0.88)),
+        #0d3b2a;
       color: white;
       text-align: center;
       padding: 120px 20px;
+      border-radius: 0 0 28px 28px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "🌳 🥭 🌿";
+      position: absolute;
+      right: 6%;
+      bottom: 18%;
+      font-size: 64px;
+      opacity: 0.22;
+      letter-spacing: 18px;
     }
 
     .hero h2 {
@@ -197,6 +212,56 @@
       box-shadow: 0 2px 10px rgba(0,0,0,0.06);
     }
 
+    .image-tile {
+      width: 100%;
+      min-height: 220px;
+      border-radius: 12px;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      font-size: 48px;
+      font-weight: 800;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .image-tile span {
+      position: relative;
+      z-index: 2;
+      text-shadow: 0 4px 18px rgba(0,0,0,0.35);
+    }
+
+    .image-tile::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(13,59,42,0.86), rgba(255,203,69,0.45));
+      z-index: 1;
+    }
+
+    .mango-img {
+      background: linear-gradient(135deg, #ffcb45, #f39c12, #0d3b2a);
+    }
+
+    .bundle-img {
+      background: linear-gradient(135deg, #0d3b2a, #2e7d32, #ffcb45);
+    }
+
+    .gift-img {
+      background: linear-gradient(135deg, #5a3e1b, #c47f17, #ffcb45);
+    }
+
+    .orchard-img {
+      background: linear-gradient(135deg, #0d3b2a, #1f7a4d, #9ccc65);
+    }
+
+    .gallery-img {
+      background: linear-gradient(135deg, #123524, #2e7d32, #f4c542);
+    }
+
     @media(max-width:768px) {
       .hero h2 {
         font-size: 36px;
@@ -259,7 +324,7 @@
   <div class="cards">
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1615485925873-9b0f8f87d4d6?q=80&w=1200&auto=format&fit=crop" style="width:100%;border-radius:12px;margin-bottom:15px;" />
+      <div class="image-tile mango-img"><span>🥭<br>Premium Kesar</span></div>
       <h3>1 Dozen Premium Kutchi Kesar Box</h3>
       <p>Farm-fresh naturally ripened premium Kesar mangoes directly from Kutch orchards.</p>
       <div class="price">₹589</div>
@@ -267,7 +332,7 @@
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?q=80&w=1200&auto=format&fit=crop" style="width:100%;border-radius:12px;margin-bottom:15px;" />
+      <div class="image-tile bundle-img"><span>📦<br>3+1 Bundle</span></div>
       <h3>Premium Kesar Mango Bundle (3+1)</h3>
       <p>Pre-order premium farm-fresh Kutchi Kesar mangoes harvested during the peak season from trusted orchards in Kutch, Gujarat.</p>
       <br>
@@ -284,7 +349,7 @@
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1621947081720-86970823b77a?q=80&w=1200&auto=format&fit=crop" style="width:100%;border-radius:12px;margin-bottom:15px;" />
+      <div class="image-tile gift-img"><span>🎁<br>Gift Box</span></div>
       <h3>Luxury Gift Mango Box</h3>
       <p>Luxury gift-ready premium mango packaging perfect for festive gifting and family celebrations.</p>
       <div class="price">₹1,499</div>
@@ -395,7 +460,7 @@
   <div class="cards">
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1598512752271-33f913a5af13?q=80&w=1200&auto=format&fit=crop" style="width:100%;border-radius:12px;margin-bottom:15px;" />
+      <div class="image-tile orchard-img"><span>🌳<br>Kutchi Orchard</span></div>
       <h3>Seasonal Orchard Allocation</h3>
       <p><strong>Allocation ID:</strong> KUTCH-KESAR-0472</p>
       <p><strong>Assigned Package:</strong> Premium Orchard Package</p>
@@ -420,15 +485,15 @@
 
   <div class="cards">
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1591073113125-e46713c829ed?q=80&w=1200&auto=format&fit=crop" style="width:100%;border-radius:12px;" />
+      <div class="image-tile gallery-img"><span>🌿<br>Orchard Rows</span></div>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1563114773-84221bd62daa?q=80&w=1200&auto=format&fit=crop" style="width:100%;border-radius:12px;" />
+      <div class="image-tile mango-img"><span>🥭<br>Mango Harvest</span></div>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1553279768-865429fa0078?q=80&w=1200&auto=format&fit=crop" style="width:100%;border-radius:12px;" />
+      <div class="image-tile bundle-img"><span>📦<br>Premium Packing</span></div>
     </div>
   </div>
 </section>
