@@ -51,7 +51,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 4rem;display:fl
 
 /* ── HERO ── */
 .hero{min-height:100vh;position:relative;display:flex;align-items:center;overflow:hidden;}
-.hero-bg{position:absolute;inset:0;background:linear-gradient(to right,rgba(10,30,15,.88) 0%,rgba(10,30,15,.62) 55%,rgba(10,30,15,.22) 100%),url('https://images.unsplash.com/photo-1553279768-865429fa0078?w=1600&auto=format&fit=crop&q=80') center/cover no-repeat;}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(to right,rgba(10,30,15,.88) 0%,rgba(10,30,15,.62) 55%,rgba(10,30,15,.22) 100%),url('assets/hero-orchard-sunset.jpg') center/cover no-repeat;}
 .hero-content{position:relative;z-index:2;padding:0 6rem;padding-top:80px;max-width:760px;}
 .hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(232,130,12,.15);border:1px solid rgba(232,130,12,.45);color:var(--saffron-light);font-size:.72rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;padding:.5rem 1rem;border-radius:2px;margin-bottom:2rem;width:fit-content;animation:fadeInUp .8s ease both;}
 .hero-badge::before{content:'✦';font-size:.6rem;}
@@ -214,7 +214,7 @@ section{padding:6rem 0;}
 .video-section{background:var(--cream);border-top:1px solid var(--border);}
 .video-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;}
 .video-placeholder{background:var(--green-deep);border-radius:4px;aspect-ratio:16/9;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;cursor:pointer;transition:all .3s;position:relative;overflow:hidden;}
-.video-placeholder::before{content:'';position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1553279768-865429fa0078?w=800&auto=format&fit=crop&q=80') center/cover no-repeat;opacity:.4;}
+.video-placeholder::before{content:'';position:absolute;inset:0;background:url('assets/farm-process-video-cover.jpg') center/cover no-repeat;opacity:.4;}
 .video-placeholder:hover::before{opacity:.6;}
 .play-btn{width:72px;height:72px;background:rgba(232,130,12,.9);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.8rem;position:relative;z-index:1;transition:transform .3s;}
 .video-placeholder:hover .play-btn{transform:scale(1.1);}
@@ -407,19 +407,19 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.6);padding:4rem 0 2rem
 <div class="img-strip">
   <div class="img-strip-inner">
     <div class="strip-img">
-      <img src="https://images.unsplash.com/photo-1519996529931-28324d5a630e?w=600&auto=format&fit=crop&q=80" alt="Ripe Kesar mangoes">
+      <img src="assets/ripe-kesar-closeup.jpg" alt="Ripe Kesar mangoes">
       <span class="strip-label">On the Tree</span>
     </div>
     <div class="strip-img">
-      <img src="https://images.unsplash.com/photo-1553279768-865429fa0078?w=600&auto=format&fit=crop&q=80" alt="Orchard harvest">
+      <img src="assets/orchard-row.jpg" alt="Orchard harvest">
       <span class="strip-label">Orchard Harvest</span>
     </div>
     <div class="strip-img">
-      <img src="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?w=600&auto=format&fit=crop&q=80" alt="Farm fresh mangoes">
+      <img src="assets/packing-team.jpg" alt="Farm fresh mangoes">
       <span class="strip-label">Farm Fresh</span>
     </div>
     <div class="strip-img">
-      <img src="https://images.unsplash.com/photo-1591073113125-e46713c829ed?w=600&auto=format&fit=crop&q=80" alt="Mango boxes">
+      <img src="assets/delivery-box.jpg" alt="Mango boxes">
       <span class="strip-label">Ready to Deliver</span>
     </div>
   </div>
@@ -431,7 +431,7 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.6);padding:4rem 0 2rem
     <div class="story-grid">
       <div class="fade-in">
         <div class="story-img-wrap">
-          <img src="https://images.unsplash.com/photo-1519996529931-28324d5a630e?w=800&auto=format&fit=crop&q=80" alt="Kesar mangoes from Kutch">
+          <img src="assets/founder-orchard.jpg" alt="Kesar mangoes from Kutch">
         </div>
         <div class="story-float-card">
           <div class="num">Kutch</div>
@@ -600,7 +600,7 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.6);padding:4rem 0 2rem
   <div class="container">
 
     <div class="shop-hero fade-in">
-      <img src="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?w=1400&auto=format&fit=crop&q=80" alt="Premium Kutchi Kesar mango boxes">
+      <img src="assets/premium-box-closeup.jpg" alt="Premium Kutchi Kesar mango boxes">
       <div class="shop-hero-text">
         <h2>Premium Kesar Mango Boxes</h2>
         <p>Handpicked from our Kutch orchard — delivered to your door</p>
@@ -610,37 +610,38 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.6);padding:4rem 0 2rem
     <div class="section-eyebrow">Shop Direct</div>
     <h2 class="section-title">Order Fresh <em>Mango Boxes</em></h2>
     <p class="section-lead" style="margin-bottom:3rem;">Harvest season starts from the 4th week of April. Pre-order now to ensure farm-fresh Kutchi Kesar mangoes reach you at peak ripeness.</p>
+    <p class="section-lead" style="margin-top:-2rem;margin-bottom:2rem;color:#7a5a2b;"><strong>Seasonal Offer:</strong> ₹299 OFF on orders above ₹2,999. Delivery charges extra based on location and order quantity. Final delivery cost will be calculated at checkout.</p>
 
     <div class="shop-grid">
       <div class="shop-card fade-in">
         <div class="shop-card-img">
-          <img src="https://images.unsplash.com/photo-1519996529931-28324d5a630e?w=500&auto=format&fit=crop&q=80" alt="A dozen Kesar mangoes">
+          <img src="assets/dozen-kesar-box.jpg" alt="A dozen Kesar mangoes">
           <span class="shop-badge green">Pre-Order</span>
         </div>
         <div class="shop-card-body">
           <div class="shop-card-title">Kesar Mango — A Dozen</div>
           <p class="shop-card-sub">12 naturally ripened, handpicked Kutchi Kesar mangoes. Ideal for a family to experience the Queen of Mangoes.</p>
-          <div class="shop-price-row"><span class="amt">₹589</span><span class="unit">/ dozen</span></div>
-          <a href="https://wa.me/917448425888?text=Hi%2C%20I%27d%20like%20to%20order%201%20dozen%20Kutchi%20Kesar%20mangoes%20%28%E2%82%B9589%29." class="shop-cta" target="_blank" rel="noopener">💬 Order on WhatsApp</a>
+          <div class="shop-price-row"><span class="amt">Price TBA</span><span class="unit">/ dozen</span></div>
+          <a href="https://wa.me/917448425888?text=Hi%2C%20I%27d%20like%20to%20order%201%20dozen%20Kutchi%20Kesar%20mangoes%20%28price%20to%20be%20finalized%29." class="shop-cta" target="_blank" rel="noopener">💬 Order on WhatsApp</a>
         </div>
       </div>
 
       <div class="shop-card fade-in">
         <div class="shop-card-img">
-          <img src="https://images.unsplash.com/photo-1553279768-865429fa0078?w=500&auto=format&fit=crop&q=80" alt="10kg Kesar box">
+          <img src="assets/5kg-kesar-box.jpg" alt="5 kg Kutchi Kesar mango box">
           <span class="shop-badge orange">Premium</span>
         </div>
         <div class="shop-card-body">
-          <div class="shop-card-title">10 kg Premium Kesar Box</div>
-          <p class="shop-card-sub">A generous 10 kg box of Grade A Kutchi Kesar mangoes. Perfect for families who love mangoes through the season.</p>
-          <div class="shop-price-row"><span class="amt">₹1,499</span><span class="unit">/ box</span></div>
-          <a href="https://wa.me/917448425888?text=Hi%2C%20I%27d%20like%20to%20order%20the%2010%20kg%20Premium%20Kesar%20Box%20%28%E2%82%B91499%29." class="shop-cta" target="_blank" rel="noopener">💬 Order on WhatsApp</a>
+          <div class="shop-card-title">5 KG Kutchi Kesar Mango Box</div>
+          <p class="shop-card-sub">A premium 5 KG box of naturally ripened Kutchi Kesar mangoes. Perfect for family orders and farm-fresh seasonal gifting.</p>
+          <div class="shop-price-row"><span class="amt">₹849</span><span class="unit">/ 5 KG box</span></div>
+          <a href="https://wa.me/917448425888?text=Hi%2C%20I%27d%20like%20to%20order%20the%205%20KG%20Kutchi%20Kesar%20Mango%20Box%20%28%E2%82%B9849%29." class="shop-cta" target="_blank" rel="noopener">💬 Order on WhatsApp</a>
         </div>
       </div>
 
       <div class="shop-card fade-in">
         <div class="shop-card-img">
-          <img src="https://images.unsplash.com/photo-1591073113125-e46713c829ed?w=500&auto=format&fit=crop&q=80" alt="Kesar mango bundle">
+          <img src="assets/family-unboxing.jpg" alt="Kesar mango bundle">
           <span class="shop-badge red">3+1 Free</span>
         </div>
         <div class="shop-card-body">
@@ -653,12 +654,12 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.6);padding:4rem 0 2rem
 
       <div class="shop-card fade-in">
         <div class="shop-card-img">
-          <img src="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?w=500&auto=format&fit=crop&q=80" alt="Luxury gift mango box">
+          <img src="assets/gift-box.jpg" alt="Luxury gift mango box">
           <span class="shop-badge orange">Gift Box</span>
         </div>
         <div class="shop-card-body">
           <div class="shop-card-title">Luxury Gift Kesar Box</div>
-          <p class="shop-card-sub">Premium Kesar mangoes in a curated gift box — perfect for corporate gifting, Eid, or special occasions.</p>
+          <p class="shop-card-sub">Premium Kutchi Kesar mangoes in a curated gift box — perfect for corporate gifting, Eid, or special occasions.</p>
           <div class="shop-price-row"><span class="amt">₹3,999</span><span class="unit">/ gift box</span></div>
           <a href="https://wa.me/917448425888?text=Hi%2C%20I%27d%20like%20to%20order%20the%20Luxury%20Gift%20Kesar%20Box%20%28%E2%82%B93999%29." class="shop-cta" target="_blank" rel="noopener">💬 Order on WhatsApp</a>
         </div>
@@ -669,7 +670,7 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.6);padding:4rem 0 2rem
     <div class="bundle-detail fade-in">
       <div class="bundle-grid">
         <div class="bundle-img">
-          <img src="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?w=700&auto=format&fit=crop&q=80" alt="Premium Kesar bundle">
+          <img src="assets/premium-box-closeup.jpg" alt="Premium Kesar bundle">
           <span class="bundle-img-label">★ Best Value</span>
         </div>
         <div class="bundle-body">
@@ -688,6 +689,8 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.6);padding:4rem 0 2rem
               <li>Buy 3 boxes of Kesar mangoes, get 1 box free</li>
               <li>Each box weight: 3.5 – 4.5 kg</li>
               <li>Total weight: 14.5 – 19.5 kg across 4 boxes</li>
+              <li>₹299 OFF automatically applies on orders above ₹2,999</li>
+              <li>Checkout logic: subtotal + delivery charges − discount = final total</li>
               <li>Naturally ripened · No chemical treatment</li>
               <li>Premium packaging included</li>
             </ul>
@@ -728,24 +731,24 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.6);padding:4rem 0 2rem
     <p class="section-lead">A glimpse into the orchard — where the magic begins each season in the heart of Kutch.</p>
     <div class="gallery-grid">
       <div class="gallery-item tall fade-in">
-        <img src="https://images.unsplash.com/photo-1553279768-865429fa0078?w=700&auto=format&fit=crop&q=80" alt="Orchard harvest Kutch">
-        <div class="gallery-caption">Harvest Season · Khombhdi Moti</div>
+        <img src="assets/orchard-harvest-aerial.jpg" alt="Orchard harvest Kutch">
+        <div class="gallery-caption">Kutch Orchard · Harvest Season</div>
       </div>
       <div class="gallery-item fade-in">
-        <img src="https://images.unsplash.com/photo-1519996529931-28324d5a630e?w=600&auto=format&fit=crop&q=80" alt="Ripe Kesar mangoes">
+        <img src="assets/ripe-kesar-closeup.jpg" alt="Ripe Kesar mangoes">
         <div class="gallery-caption">Ripe Kesar · Ready to Pick</div>
       </div>
       <div class="gallery-item fade-in">
-        <img src="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?w=600&auto=format&fit=crop&q=80" alt="Mango packing">
+        <img src="assets/packing-team.jpg" alt="Mango packing">
         <div class="gallery-caption">Packing Fresh · Farm to Box</div>
       </div>
       <div class="gallery-item fade-in">
-        <img src="https://images.unsplash.com/photo-1591073113125-e46713c829ed?w=600&auto=format&fit=crop&q=80" alt="Mango boxes ready">
-        <div class="gallery-caption">Dispatch Day · Pan-India Delivery</div>
+        <img src="assets/delivery-box.jpg" alt="Mango boxes ready">
+        <div class="gallery-caption">Farm Fresh · Home Delivery</div>
       </div>
       <div class="gallery-item fade-in">
-        <img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?w=600&auto=format&fit=crop&q=80" alt="Orchard rows Kutch">
-        <div class="gallery-caption">Orchard Rows · Kutch, Gujarat</div>
+        <img src="assets/tree-tag-qr.jpg" alt="Orchard rows Kutch">
+        <div class="gallery-caption">Reserved Tree ID · QR Tracking</div>
       </div>
     </div>
   </div>
