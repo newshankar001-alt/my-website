@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BookAMango.in — Chauhan Mango Farm | Kutchi Kesar Mangoes, Gujarat</title>
-<meta name="description" content="Reserve premium Kutchi Kesar mangoes directly from Chauhan Mango Farm, Khombhdi Moti, Kutch, Gujarat. The Queen of Mangoes — seasonal orchard allocation, farm-fresh delivery across India.">
+<title>BookAMango — Reserve Your Kesar Mango Tree | Premium Kutchi Kesar Mangoes, Gujarat</title>
+<meta name="description" content="Reserve premium Kutchi Kesar mangoes directly from our Kutch orchard in Gujarat. Reserve your own Kesar mango tree and get farm-fresh delivery across India.">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "name": "CHAUHAN MANGO FARM",
+  "name": "BookAMango — Chauhan Mango Farm",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Mahavir Nagar, near Government High School",
@@ -51,7 +51,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 4rem;display:fl
 
 /* ── HERO ── */
 .hero{min-height:100vh;position:relative;display:flex;align-items:center;overflow:hidden;}
-.hero-bg{position:absolute;inset:0;background:linear-gradient(to right,rgba(10,30,15,.88) 0%,rgba(10,30,15,.62) 55%,rgba(10,30,15,.22) 100%),url('assets/hero-orchard-sunset.jpg') center/cover no-repeat;}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(to right,rgba(10,30,15,.88) 0%,rgba(10,30,15,.62) 55%,rgba(10,30,15,.22) 100%),url('images/hero-orchard.png') center/cover no-repeat;}
 .hero-content{position:relative;z-index:2;padding:0 6rem;padding-top:80px;max-width:760px;}
 .hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(232,130,12,.15);border:1px solid rgba(232,130,12,.45);color:var(--saffron-light);font-size:.72rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;padding:.5rem 1rem;border-radius:2px;margin-bottom:2rem;width:fit-content;animation:fadeInUp .8s ease both;}
 .hero-badge::before{content:'✦';font-size:.6rem;}
@@ -67,6 +67,13 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 4rem;display:fl
 .hero-stats{display:flex;gap:2.5rem;margin-top:3.5rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,.15);animation:fadeInUp .8s ease .5s both;}
 .stat-num{font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--saffron-light);line-height:1;}
 .stat-label{font-size:.72rem;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.08em;margin-top:.3rem;}
+
+/* ── TRUST STRIP ── */
+.trust-strip{background:var(--green-deep);padding:1.5rem 0;border-bottom:1px solid rgba(255,255,255,.08);}
+.trust-inner{max-width:1200px;margin:0 auto;padding:0 4rem;display:flex;justify-content:center;align-items:center;gap:3rem;flex-wrap:wrap;}
+.trust-item{display:flex;align-items:center;gap:.6rem;color:rgba(255,255,255,.75);font-size:.78rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase;}
+.trust-item span:first-child{font-size:1rem;}
+.trust-sep{color:rgba(232,130,12,.4);font-size:.6rem;}
 
 /* ── IMG STRIP ── */
 .img-strip{background:var(--green-deep);overflow:hidden;}
@@ -99,7 +106,16 @@ section{padding:6rem 0;}
 .feature-icon{width:36px;height:36px;background:var(--saffron-pale);border:1px solid var(--border);border-radius:2px;display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0;}
 .feature-text strong{display:block;font-weight:500;color:var(--green-deep);margin-bottom:.2rem;}
 
-/* ── TREE ALLOCATION ── */
+/* ── RESERVE TREE SECTION ── */
+.reserve-section{background:var(--saffron-pale);border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+.reserve-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;}
+.reserve-img{border-radius:4px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/3;}
+.reserve-img img{width:100%;height:100%;object-fit:cover;display:block;}
+.reserve-steps{list-style:none;display:flex;flex-direction:column;gap:1.2rem;margin-top:2rem;}
+.reserve-steps li{display:flex;align-items:flex-start;gap:1rem;font-size:.9rem;color:var(--charcoal);line-height:1.5;}
+.reserve-step-num{width:28px;height:28px;background:var(--green-deep);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;color:white;flex-shrink:0;margin-top:1px;}
+
+/* ── TREE SECTION / QR ── */
 .tree-section{background:var(--green-deep);position:relative;overflow:hidden;}
 .tree-section::before{content:'';position:absolute;top:-200px;right:-200px;width:600px;height:600px;background:radial-gradient(circle,rgba(232,130,12,.1) 0%,transparent 70%);pointer-events:none;}
 .tree-section .section-title{color:var(--cream);}
@@ -118,6 +134,9 @@ section{padding:6rem 0;}
 .tree-desc{font-size:.875rem;color:rgba(253,248,240,.65);line-height:1.75;margin-bottom:1.5rem;}
 .tree-allocation-note{background:rgba(232,130,12,.12);border:1px solid rgba(232,130,12,.3);border-radius:4px;padding:1.2rem;font-size:.8rem;color:rgba(253,248,240,.7);line-height:1.6;margin-top:1.5rem;}
 .tree-allocation-note strong{color:var(--saffron-light);display:block;margin-bottom:.3rem;}
+.qr-img-wrap{border-radius:4px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.4);margin-bottom:1.5rem;}
+.qr-img-wrap img{width:100%;display:block;object-fit:cover;}
+.qr-note{background:rgba(232,130,12,.1);border:1px solid rgba(232,130,12,.25);border-radius:4px;padding:1rem;font-size:.8rem;color:rgba(253,248,240,.65);line-height:1.6;font-style:italic;}
 
 /* ── PACKAGES ── */
 .packages-section{background:var(--cream);}
@@ -134,9 +153,10 @@ section{padding:6rem 0;}
 .pkg-yield{font-size:.78rem;color:var(--warm-grey);margin-bottom:.5rem;}
 .pkg-id-preview{background:var(--saffron-pale);border:1px solid var(--border);border-radius:2px;padding:.5rem .75rem;font-family:monospace;font-size:.75rem;color:var(--green-deep);font-weight:600;letter-spacing:.08em;margin-top:.75rem;display:inline-block;}
 .pkg-body{padding:1.75rem 2rem;}
-.pkg-features{list-style:none;display:flex;flex-direction:column;gap:.75rem;margin-bottom:1.75rem;}
+.pkg-features{list-style:none;display:flex;flex-direction:column;gap:.75rem;margin-bottom:1.25rem;}
 .pkg-features li{display:flex;align-items:flex-start;gap:.7rem;font-size:.82rem;color:var(--warm-grey);line-height:1.5;}
 .pkg-features li::before{content:'✦';color:var(--saffron);font-size:.5rem;margin-top:4px;flex-shrink:0;}
+.pkg-delivery-note{font-size:.76rem;color:var(--warm-grey);font-style:italic;background:var(--saffron-pale);border:1px solid var(--border);border-radius:2px;padding:.6rem .8rem;margin-bottom:1.25rem;line-height:1.5;}
 .pkg-cta{display:flex;align-items:center;justify-content:center;gap:.5rem;width:100%;background:#25D366;color:white;text-decoration:none;padding:.9rem 1.5rem;border-radius:2px;font-size:.875rem;font-weight:600;transition:all .25s;}
 .pkg-cta:hover{background:#1da851;transform:translateY(-2px);}
 .pkg-cta.dark{background:var(--green-deep);}
@@ -149,43 +169,30 @@ section{padding:6rem 0;}
 .shop-hero-text{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2rem;}
 .shop-hero-text h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,3rem);font-weight:900;color:white;letter-spacing:-.02em;margin-bottom:.5rem;}
 .shop-hero-text p{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-style:italic;color:rgba(255,255,255,.85);}
-.shop-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;}
+.shop-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2rem;margin-top:2.5rem;}
 .shop-card{background:var(--cream);border:1px solid var(--border);border-radius:4px;overflow:hidden;transition:all .3s;}
 .shop-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);}
-.shop-card-img{position:relative;height:180px;overflow:hidden;}
+.shop-card-img{position:relative;height:220px;overflow:hidden;}
 .shop-card-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s;}
 .shop-card:hover .shop-card-img img{transform:scale(1.07);}
 .shop-badge{position:absolute;top:.75rem;left:.75rem;color:white;font-size:.65rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.3rem .7rem;border-radius:2px;}
 .shop-badge.orange{background:var(--saffron);}
 .shop-badge.green{background:var(--green-deep);}
 .shop-badge.red{background:var(--red);}
-.shop-card-body{padding:1.25rem;}
-.shop-card-title{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--green-deep);margin-bottom:.4rem;line-height:1.3;}
-.shop-card-sub{font-size:.75rem;color:var(--warm-grey);line-height:1.5;margin-bottom:.9rem;}
-.shop-price-row{display:flex;align-items:baseline;gap:.4rem;margin-bottom:1rem;}
-.shop-price-row .amt{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;color:var(--saffron);}
+.shop-card-body{padding:1.5rem;}
+.shop-card-title{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--green-deep);margin-bottom:.4rem;line-height:1.3;}
+.shop-card-sub{font-size:.82rem;color:var(--warm-grey);line-height:1.6;margin-bottom:.9rem;}
+.shop-price-row{display:flex;align-items:baseline;gap:.4rem;margin-bottom:.6rem;}
+.shop-price-row .amt{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:700;color:var(--saffron);}
 .shop-price-row .unit{font-size:.75rem;color:var(--warm-grey);}
-.shop-cta{display:flex;align-items:center;justify-content:center;gap:.4rem;width:100%;background:#25D366;color:white;text-decoration:none;padding:.75rem;border-radius:2px;font-size:.8rem;font-weight:600;transition:all .25s;}
+.shop-delivery-note{font-size:.75rem;color:var(--warm-grey);font-style:italic;margin-bottom:1rem;}
+.shop-cta{display:flex;align-items:center;justify-content:center;gap:.4rem;width:100%;background:#25D366;color:white;text-decoration:none;padding:.85rem;border-radius:2px;font-size:.85rem;font-weight:600;transition:all .25s;}
 .shop-cta:hover{background:#1da851;}
-
-/* BUNDLE CARD */
-.bundle-detail{background:white;border:1px solid var(--border);border-radius:4px;margin-top:2.5rem;overflow:hidden;box-shadow:var(--shadow);}
-.bundle-grid{display:grid;grid-template-columns:1fr 1.4fr;}
-.bundle-img{position:relative;min-height:340px;overflow:hidden;}
-.bundle-img img{width:100%;height:100%;object-fit:cover;display:block;}
-.bundle-img-label{position:absolute;top:1.2rem;left:1.2rem;background:var(--red);color:white;font-size:.75rem;font-weight:700;letter-spacing:.08em;padding:.4rem 1rem;border-radius:2px;}
-.bundle-body{padding:2.5rem;}
-.bundle-title{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:var(--green-deep);margin-bottom:.3rem;}
-.bundle-price-row{display:flex;align-items:center;gap:1rem;margin:1rem 0 1.2rem;}
-.bundle-price{font-family:'Playfair Display',serif;font-size:2.5rem;font-weight:700;color:var(--saffron);}
-.bundle-tag{background:var(--saffron-pale);border:1px solid var(--border);color:var(--saffron);font-size:.72rem;font-weight:600;padding:.3rem .8rem;border-radius:2px;letter-spacing:.06em;text-transform:uppercase;}
-.bundle-desc{font-size:.875rem;color:var(--warm-grey);line-height:1.8;margin-bottom:1.5rem;}
-.bundle-includes{background:var(--saffron-pale);border:1px solid var(--border);border-radius:4px;padding:1.2rem 1.5rem;margin-bottom:1.5rem;}
-.bundle-includes h4{font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--green-deep);margin-bottom:.75rem;}
-.bundle-includes ul{list-style:none;display:flex;flex-direction:column;gap:.4rem;}
-.bundle-includes ul li{font-size:.82rem;color:var(--warm-grey);display:flex;gap:.5rem;}
-.bundle-includes ul li::before{content:'—';color:var(--saffron);}
-.shop-note{text-align:center;margin-top:3rem;padding:1.5rem 2rem;background:var(--saffron-pale);border:1px solid var(--border);border-radius:4px;font-size:.85rem;color:var(--warm-grey);line-height:1.6;}
+.shop-offer-banner{background:var(--green-deep);border-radius:4px;padding:1.25rem 2rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-bottom:2.5rem;}
+.shop-offer-banner .offer-text{color:white;font-size:.95rem;font-weight:500;}
+.shop-offer-banner .offer-text strong{color:var(--saffron-light);font-family:'Playfair Display',serif;font-size:1.2rem;}
+.shop-offer-banner .offer-badge{background:var(--saffron);color:white;font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.4rem 1rem;border-radius:2px;white-space:nowrap;}
+.shop-note{text-align:center;margin-top:2.5rem;padding:1.5rem 2rem;background:var(--saffron-pale);border:1px solid var(--border);border-radius:4px;font-size:.85rem;color:var(--warm-grey);line-height:1.6;}
 .shop-note strong{color:var(--green-deep);}
 
 /* ── HOW IT WORKS ── */
@@ -199,6 +206,62 @@ section{padding:6rem 0;}
 .step-title{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:var(--green-deep);margin-bottom:.6rem;}
 .step-desc{font-size:.82rem;color:var(--warm-grey);line-height:1.6;}
 
+/* ── QUALITY ── */
+.quality-section{background:var(--cream);}
+.quality-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;}
+.quality-img{border-radius:4px;overflow:hidden;box-shadow:var(--shadow);}
+.quality-img img{width:100%;display:block;object-fit:cover;max-height:480px;}
+.quality-points{list-style:none;display:flex;flex-direction:column;gap:1.2rem;margin-top:2rem;}
+.quality-points li{display:flex;align-items:flex-start;gap:1rem;font-size:.9rem;color:var(--charcoal);line-height:1.5;}
+
+/* ── PACKAGING ── */
+.packaging-section{background:white;border-top:1px solid var(--border);}
+.packaging-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;}
+.packaging-img{border-radius:4px;overflow:hidden;box-shadow:var(--shadow);}
+.packaging-img img{width:100%;display:block;object-fit:cover;}
+.packaging-points{list-style:none;display:flex;flex-direction:column;gap:1rem;margin-top:1.5rem;}
+.packaging-points li{display:flex;align-items:flex-start;gap:.9rem;font-size:.875rem;color:var(--warm-grey);line-height:1.5;}
+.packaging-points li::before{content:'✦';color:var(--saffron);font-size:.5rem;margin-top:4px;flex-shrink:0;}
+
+/* ── DELIVERY ── */
+.delivery-section{background:var(--saffron-pale);border-top:1px solid var(--border);}
+.delivery-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;}
+.delivery-img{border-radius:4px;overflow:hidden;box-shadow:var(--shadow);}
+.delivery-img img{width:100%;display:block;object-fit:cover;max-height:440px;}
+
+/* ── FOUNDER / TEAM ── */
+.team-section{background:white;border-top:1px solid var(--border);}
+.team-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;margin-top:3rem;}
+.person-card{border-radius:4px;overflow:hidden;box-shadow:var(--shadow);}
+.person-card img{width:100%;display:block;object-fit:cover;max-height:480px;}
+.person-caption{padding:1.5rem;background:white;border:1px solid var(--border);border-top:none;}
+.person-name{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--green-deep);margin-bottom:.4rem;}
+.person-role{font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--saffron);margin-bottom:.6rem;}
+.person-quote{font-family:'Cormorant Garamond',serif;font-size:1rem;font-style:italic;color:var(--warm-grey);line-height:1.6;}
+
+/* ── FAMILY EXPERIENCE ── */
+.family-section{background:var(--green-deep);position:relative;overflow:hidden;}
+.family-section::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 30% 50%,rgba(232,130,12,.1) 0%,transparent 60%);pointer-events:none;}
+.family-section .section-title{color:var(--cream);}
+.family-section .section-lead{color:rgba(253,248,240,.65);}
+.family-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;margin-top:3rem;}
+.family-img{border-radius:4px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.35);}
+.family-img img{width:100%;display:block;object-fit:cover;max-height:460px;}
+.family-points{list-style:none;display:flex;flex-direction:column;gap:1rem;}
+.family-points li{display:flex;align-items:flex-start;gap:.8rem;font-size:.9rem;color:rgba(253,248,240,.75);line-height:1.5;}
+.family-points li::before{content:'✦';color:var(--saffron-light);font-size:.55rem;margin-top:4px;flex-shrink:0;}
+
+/* ── TESTIMONIALS ── */
+.testimonials-section{background:var(--cream);border-top:1px solid var(--border);}
+.testimonials-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-top:3rem;}
+.testi-card{background:white;border:1px solid var(--border);border-radius:4px;padding:2rem;position:relative;}
+.testi-card::before{content:'\201C';font-family:'Playfair Display',serif;font-size:4rem;font-weight:700;color:var(--saffron-pale);position:absolute;top:1rem;left:1.5rem;line-height:1;}
+.testi-text{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-style:italic;color:var(--charcoal);line-height:1.7;margin-top:1.5rem;margin-bottom:1.5rem;}
+.testi-footer{display:flex;align-items:center;justify-content:space-between;border-top:1px solid rgba(200,150,12,.12);padding-top:1rem;}
+.testi-name{font-size:.82rem;font-weight:600;color:var(--green-deep);}
+.testi-loc{font-size:.75rem;color:var(--warm-grey);}
+.testi-stars{color:var(--saffron);font-size:.9rem;letter-spacing:.1em;}
+
 /* ── GALLERY ── */
 .gallery-section{background:var(--green-deep);}
 .gallery-section .section-title{color:var(--cream);}
@@ -210,20 +273,11 @@ section{padding:6rem 0;}
 .gallery-item:hover img{transform:scale(1.05);filter:brightness(1);}
 .gallery-caption{position:absolute;bottom:0;left:0;right:0;padding:.9rem 1rem;background:linear-gradient(transparent,rgba(10,30,15,.85));color:white;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;}
 
-/* ── VIDEO SECTION ── */
-.video-section{background:var(--cream);border-top:1px solid var(--border);}
-.video-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;}
-.video-placeholder{background:var(--green-deep);border-radius:4px;aspect-ratio:16/9;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;cursor:pointer;transition:all .3s;position:relative;overflow:hidden;}
-.video-placeholder::before{content:'';position:absolute;inset:0;background:url('assets/farm-process-video-cover.jpg') center/cover no-repeat;opacity:.4;}
-.video-placeholder:hover::before{opacity:.6;}
-.play-btn{width:72px;height:72px;background:rgba(232,130,12,.9);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.8rem;position:relative;z-index:1;transition:transform .3s;}
-.video-placeholder:hover .play-btn{transform:scale(1.1);}
-.video-label{position:relative;z-index:1;color:white;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;}
-.video-items{display:flex;flex-direction:column;gap:1.2rem;margin-top:2rem;}
-.video-item{display:flex;gap:1rem;align-items:flex-start;padding:1rem;background:white;border:1px solid var(--border);border-radius:4px;}
-.video-thumb{width:48px;height:48px;background:var(--saffron-pale);border-radius:2px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;}
-.video-item-title{font-size:.875rem;font-weight:500;color:var(--green-deep);margin-bottom:.2rem;}
-.video-item-desc{font-size:.75rem;color:var(--warm-grey);}
+/* ── FINAL CTA ── */
+.final-cta-section{background:var(--saffron-pale);border-top:1px solid var(--border);text-align:center;}
+.final-cta-section .section-title{margin:0 auto 1rem;}
+.final-cta-section .section-lead{margin:0 auto 2.5rem;}
+.final-cta-btns{display:flex;justify-content:center;gap:1.5rem;flex-wrap:wrap;}
 
 /* ── SEASON ── */
 .season-section{background:var(--saffron-pale);border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
@@ -243,7 +297,7 @@ section{padding:6rem 0;}
 .info-label{color:var(--warm-grey);}
 .info-val{font-weight:500;color:var(--green-deep);}
 
-/* ── FUTURE FEATURES ── */
+/* ── FUTURE ── */
 .future-section{background:var(--green-deep);position:relative;overflow:hidden;}
 .future-section::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 80% 50%,rgba(232,130,12,.12) 0%,transparent 60%),radial-gradient(circle at 10% 80%,rgba(74,138,82,.2) 0%,transparent 50%);pointer-events:none;}
 .future-section .section-title{color:var(--cream);}
@@ -307,8 +361,9 @@ section{padding:6rem 0;}
 /* ── FOOTER ── */
 footer{background:var(--charcoal);color:rgba(255,255,255,.6);padding:4rem 0 2rem;}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:4rem;margin-bottom:3rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,.1);}
-.footer-brand .logo{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:white;text-decoration:none;display:block;margin-bottom:1rem;}
+.footer-brand .logo{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:white;text-decoration:none;display:block;margin-bottom:.3rem;}
 .footer-brand .logo span{color:var(--saffron);}
+.footer-brand .tagline{font-size:.75rem;color:rgba(255,255,255,.35);text-transform:uppercase;letter-spacing:.1em;margin-bottom:1rem;}
 .footer-brand p{font-size:.875rem;line-height:1.7;max-width:280px;margin-bottom:1.5rem;}
 .footer-heading{font-size:.73rem;font-weight:500;text-transform:uppercase;letter-spacing:.12em;color:white;margin-bottom:1.2rem;}
 .footer-links{list-style:none;display:flex;flex-direction:column;gap:.7rem;}
@@ -318,18 +373,17 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.6);padding:4rem 0 2rem
 .footer-contact-item span:first-child{color:var(--saffron);font-size:.9rem;margin-top:1px;}
 .footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.78rem;}
 .footer-bottom a{color:rgba(255,255,255,.4);text-decoration:none;}
-.footer-bottom a:hover{color:var(--saffron-light);}
 
 /* ── STICKY WA ── */
-.sticky-wa{position:fixed;bottom:2rem;right:2rem;z-index:200;}
-.sticky-wa a{display:flex;align-items:center;gap:.75rem;background:#25D366;color:white;text-decoration:none;padding:.9rem 1.4rem;border-radius:50px;font-size:.875rem;font-weight:600;box-shadow:0 8px 32px rgba(37,211,102,.4);transition:all .25s;}
-.sticky-wa a:hover{transform:translateY(-3px);box-shadow:0 12px 40px rgba(37,211,102,.5);}
-.wa-pulse{position:absolute;top:-4px;right:-4px;width:14px;height:14px;background:var(--saffron);border-radius:50%;border:2px solid white;animation:pulse 2s infinite;}
+.sticky-wa{position:fixed;bottom:1.5rem;left:1.5rem;z-index:200;display:flex;align-items:center;gap:.6rem;}
+.wa-pulse{width:12px;height:12px;background:#25D366;border-radius:50%;animation:pulse 2s infinite;}
+.sticky-wa a{background:#25D366;color:white;text-decoration:none;padding:.7rem 1.3rem;border-radius:100px;font-size:.82rem;font-weight:600;box-shadow:0 4px 20px rgba(37,211,102,.4);transition:all .25s;}
+.sticky-wa a:hover{background:#1da851;transform:translateY(-2px);}
 
 /* ── ANIMATIONS ── */
 @keyframes fadeInUp{from{opacity:0;transform:translateY(24px);}to{opacity:1;transform:translateY(0);}}
-@keyframes pulse{0%{transform:scale(1);opacity:1;}50%{transform:scale(1.3);opacity:.7;}100%{transform:scale(1);opacity:1;}}
-.fade-in{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease;}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,.5);}50%{box-shadow:0 0 0 8px rgba(37,211,102,0);}}
+.fade-in{opacity:0;transform:translateY(24px);transition:opacity .65s ease,transform .65s ease;}
 .fade-in.visible{opacity:1;transform:translateY(0);}
 
 /* ── RESPONSIVE ── */
@@ -345,25 +399,26 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.6);padding:4rem 0 2rem
   .hamburger{display:flex;}
   .hero-content{padding:5rem 1.5rem 3rem;}
   .img-strip-inner{grid-template-columns:repeat(2,1fr);height:320px;}
-  .story-grid,.season-grid,.booking-inner,.location-grid,.footer-grid,.tree-grid,.video-grid{grid-template-columns:1fr;gap:2.5rem;}
-  .variety-grid,.packages-grid{grid-template-columns:1fr 1fr;}
-  .shop-grid{grid-template-columns:1fr 1fr;}
+  .trust-inner{gap:1.5rem;padding:0 1.5rem;}
+  .story-grid,.season-grid,.booking-inner,.location-grid,.footer-grid,.tree-grid,.reserve-grid,.quality-grid,.packaging-grid,.delivery-grid,.team-grid,.family-grid{grid-template-columns:1fr;gap:2.5rem;}
+  .packages-grid{grid-template-columns:1fr 1fr;}
+  .shop-grid{grid-template-columns:1fr;}
   .steps-grid{grid-template-columns:1fr 1fr;}
   .steps-grid::before{display:none;}
   .gallery-grid{grid-template-columns:1fr 1fr;}
   .future-grid{grid-template-columns:1fr 1fr;}
+  .testimonials-grid{grid-template-columns:1fr;}
   .terms-grid{grid-template-columns:1fr;}
   .story-float-card{display:none;}
-  .bundle-grid{grid-template-columns:1fr;}
-  .bundle-img{min-height:240px;}
   section{padding:4rem 0;}
   .container{padding:0 1.5rem;}
   .footer-grid{grid-template-columns:1fr;gap:2.5rem;}
 }
 @media(max-width:480px){
-  .packages-grid,.shop-grid,.future-grid,.gallery-grid,.steps-grid,.img-strip-inner{grid-template-columns:1fr;}
+  .packages-grid,.future-grid,.gallery-grid,.steps-grid,.img-strip-inner{grid-template-columns:1fr;}
   .img-strip-inner{height:auto;}
   .strip-img{height:200px;}
+  .shop-offer-banner{flex-direction:column;text-align:center;}
 }
 </style>
 </head>
@@ -374,10 +429,10 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.6);padding:4rem 0 2rem
   <a href="#" class="nav-logo">BookA<span>Mango</span>.in</a>
   <ul class="nav-links">
     <li><a href="#story">Our Farm</a></li>
+    <li><a href="#tree">Reserve Tree</a></li>
     <li><a href="#packages">Packages</a></li>
     <li><a href="#shop">Shop</a></li>
-    <li><a href="#season">Season</a></li>
-    <li><a href="#location">Location</a></li>
+    <li><a href="#gallery">Gallery</a></li>
     <li><a href="#book" class="nav-cta">Reserve Now</a></li>
   </ul>
   <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
@@ -387,51 +442,66 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.6);padding:4rem 0 2rem
 <section class="hero" id="home">
   <div class="hero-bg"></div>
   <div class="hero-content">
-    <div class="hero-badge">Kutch · Gujarat · Since Generations</div>
-    <h1 class="hero-title">The <em>Queen</em><br>of Mangoes</h1>
-    <p class="hero-subtitle">Harvest season is finally here!</p>
-    <p class="hero-desc">Chauhan Mango Farm offers authentic Kutchi Kesar mangoes — handpicked from our family orchards in Khombhdi Moti, Kutch. Reserve your personal tree allocation this season and receive farm-fresh Kesar mangoes delivered across India.</p>
+    <div class="hero-badge">Kutch · Gujarat · Premium Kesar Orchard</div>
+    <h1 class="hero-title">Reserve Your<br><em>Premium</em> Kesar<br>Mango Tree</h1>
+    <p class="hero-subtitle">Farm-to-home luxury from our Kutch orchard</p>
+    <p class="hero-desc">Experience the finest Kutchi Kesar mangoes grown in our Kutch orchard and delivered fresh to your home. Reserve your own tree and follow its journey this season.</p>
     <div class="hero-actions">
-      <a href="#packages" class="btn-primary">🌳 Reserve Your Allocation &rarr;</a>
-      <a href="#shop" class="btn-secondary">🥭 Shop Mango Boxes</a>
+      <a href="#packages" class="btn-primary">🌳 Reserve Your Tree &rarr;</a>
+      <a href="#shop" class="btn-secondary">🥭 Explore Packages</a>
     </div>
     <div class="hero-stats">
       <div><div class="stat-num">100%</div><div class="stat-label">Farm Direct</div></div>
-      <div><div class="stat-num">GI</div><div class="stat-label">Tagged Kesar</div></div>
+      <div><div class="stat-num">Kutch</div><div class="stat-label">Gujarat Origin</div></div>
       <div><div class="stat-num">0</div><div class="stat-label">Middlemen</div></div>
     </div>
   </div>
 </section>
 
+<!-- TRUST STRIP -->
+<div class="trust-strip">
+  <div class="trust-inner">
+    <div class="trust-item"><span>🌿</span><span>Naturally Grown</span></div>
+    <div class="trust-sep">✦</div>
+    <div class="trust-item"><span>🚚</span><span>Farm Fresh Delivery</span></div>
+    <div class="trust-sep">✦</div>
+    <div class="trust-item"><span>🌳</span><span>Tree Reservation Concept</span></div>
+    <div class="trust-sep">✦</div>
+    <div class="trust-item"><span>📍</span><span>Kutch Kesar Orchard</span></div>
+    <div class="trust-sep">✦</div>
+    <div class="trust-item"><span>📦</span><span>Premium Packing</span></div>
+  </div>
+</div>
+
 <!-- IMAGE STRIP -->
 <div class="img-strip">
   <div class="img-strip-inner">
     <div class="strip-img">
-      <img src="assets/ripe-kesar-closeup.jpg" alt="Ripe Kesar mangoes">
+      <img src="images/ripe-mango.png" alt="Ripe Kesar mangoes">
       <span class="strip-label">On the Tree</span>
     </div>
     <div class="strip-img">
-      <img src="assets/orchard-row.jpg" alt="Orchard harvest">
-      <span class="strip-label">Orchard Harvest</span>
+      <img src="images/orchard-row.png" alt="Kutch orchard rows">
+      <span class="strip-label">Our Orchard</span>
     </div>
     <div class="strip-img">
-      <img src="assets/packing-team.jpg" alt="Farm fresh mangoes">
-      <span class="strip-label">Farm Fresh</span>
+      <img src="images/team.png" alt="BookAMango team">
+      <span class="strip-label">Farm Team</span>
     </div>
     <div class="strip-img">
-      <img src="assets/delivery-box.jpg" alt="Mango boxes">
-      <span class="strip-label">Ready to Deliver</span>
+      <img src="images/packing-box.png" alt="Premium packaging">
+      <span class="strip-label">Premium Pack</span>
     </div>
   </div>
 </div>
 
-<!-- STORY -->
+<!-- OUR ORCHARD STORY -->
 <section class="story-section" id="story">
   <div class="container">
     <div class="story-grid">
       <div class="fade-in">
         <div class="story-img-wrap">
-          <img src="assets/founder-orchard.jpg" alt="Kesar mangoes from Kutch">
+          <img src="images/orchard-pathway.png" alt="Kutch mango orchard pathway">
         </div>
         <div class="story-float-card">
           <div class="num">Kutch</div>
@@ -439,39 +509,64 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.6);padding:4rem 0 2rem
         </div>
       </div>
       <div class="fade-in">
-        <div class="section-eyebrow">Our Heritage</div>
+        <div class="section-eyebrow">Our Orchard Story</div>
         <h2 class="section-title">Rooted in the<br>Soil of <em>Kutch</em></h2>
-        <p class="story-text">Nestled in Khombhdi Moti, the Chauhan family orchard has been producing premium Kutchi Kesar mangoes for generations. The unique laterite soil of Kutch, combined with the warm coastal climate, gives our Kesar mangoes their signature saffron-golden hue, honey-like sweetness, and royal aroma.</p>
-        <p class="story-text">Every mango that leaves our farm is grown with patience and care. No artificial ripening agents. No shortcuts. Just nature, time, and generations of farming wisdom.</p>
+        <p class="story-text">At BookAMango, we do not just grow mangoes — we grow trust, tradition, and farm-to-home freshness. Our Kutch orchard is carefully nurtured to bring premium Kutchi Kesar mangoes directly from our trees to your family.</p>
+        <p class="story-text">The unique soil of Kutch, combined with the warm Gujarat climate, gives our Kesar mangoes their signature saffron-golden hue, honey-like sweetness, and royal aroma. Every mango that leaves our farm is grown with patience and care — no artificial ripening agents, no shortcuts.</p>
         <ul class="story-features">
           <li><div class="feature-icon">🌱</div><div class="feature-text"><strong>Traditional Farming Practices</strong>No harmful chemicals — naturally ripened on the tree</div></li>
-          <li><div class="feature-icon">📍</div><div class="feature-text"><strong>True Kutchi Origin</strong>Grown in Khombhdi Moti — the mineral-rich heartland of Kutch</div></li>
-          <li><div class="feature-icon">🤝</div><div class="feature-text"><strong>Direct from Farmer</strong>No middlemen — better price, greater freshness, full transparency</div></li>
+          <li><div class="feature-icon">🌾</div><div class="feature-text"><strong>Kutch Kesar Heritage</strong>Grown in the mineral-rich heartland of Kutch, Gujarat</div></li>
+          <li><div class="feature-icon">📍</div><div class="feature-text"><strong>True Kutchi Origin</strong>Khombhdi Moti — from our farm directly to your home</div></li>
+          <li><div class="feature-icon">🤝</div><div class="feature-text"><strong>Direct from the Farmer</strong>No middlemen — better price, greater freshness, full transparency</div></li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- TREE ALLOCATION SYSTEM -->
-<section class="tree-section" id="tree">
+<!-- RESERVE YOUR TREE -->
+<section class="reserve-section" id="tree">
+  <div class="container">
+    <div class="reserve-grid">
+      <div class="fade-in">
+        <div class="section-eyebrow">Reserve Your Tree</div>
+        <h2 class="section-title">Your Own<br><em>Kesar Mango</em> Tree</h2>
+        <p class="section-lead">Choose your tree, follow its seasonal journey, and enjoy mangoes harvested from your reserved tree. A personal farm experience made simple for families.</p>
+        <ul class="reserve-steps">
+          <li><div class="reserve-step-num">1</div><span><strong>Choose & Reserve</strong> — Select your tree reservation package online via WhatsApp</span></li>
+          <li><div class="reserve-step-num">2</div><span><strong>Get Your Tree ID</strong> — Receive a unique tree ID and nameplate on your reserved tree</span></li>
+          <li><div class="reserve-step-num">3</div><span><strong>Seasonal Updates</strong> — Follow your tree's journey from flowering to harvest</span></li>
+          <li><div class="reserve-step-num">4</div><span><strong>Fresh Delivery</strong> — Handpicked mangoes delivered to your doorstep at peak ripeness</span></li>
+        </ul>
+      </div>
+      <div class="fade-in">
+        <div class="reserve-img">
+          <img src="images/reserved-tree-family.png" alt="Family with reserved mango tree">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRACK YOUR TREE / QR CONCEPT -->
+<section class="tree-section">
   <div class="container">
     <div class="section-eyebrow" style="color:var(--saffron-light)">Orchard Allocation</div>
-    <h2 class="section-title">Your <em>Personal</em> Tree</h2>
-    <p class="section-lead">When you reserve a seasonal package, you receive a dedicated tree allocation in our Khombhdi Moti orchard — complete with a unique nameplate ID that is yours for the season.</p>
+    <h2 class="section-title">Track Your<br><em>Reserved Tree</em></h2>
+    <p class="section-lead">Every reserved tree is assigned a unique tree ID. Customers receive seasonal updates, tree photos, and harvest information before delivery.</p>
     <div class="tree-grid">
       <div class="tree-card fade-in">
         <div class="nameplate">
-          <div class="nameplate-id">TREE27MGAL0320</div>
-          <div class="nameplate-label">Sample Allocation ID · Chauhan Mango Farm</div>
+          <div class="nameplate-id">BKMG-1087</div>
+          <div class="nameplate-label">Your Tree ID · BookAMango Kesar Farm</div>
         </div>
-        <p class="tree-desc">Every reserved tree comes with a unique identifier — your personal nameplate on the orchard, bearing your chosen name or identifier. Your tree is tracked through the season, from flowering to harvest.</p>
+        <p class="tree-desc">Your reserved tree is tracked through the season — from flowering to harvest. Receive WhatsApp updates with seasonal photos and harvest notifications before your mangoes are dispatched.</p>
         <ul class="tree-benefits">
           <li>Personalised tree ID issued upon booking confirmation</li>
-          <li>Seasonal progress updates from your allocated trees</li>
+          <li>Seasonal progress updates from your allocated tree</li>
           <li>Harvest notification when your mangoes are ready</li>
           <li>Minimum yield guarantee per package — backed by reserve trees</li>
-          <li>If primary tree yields less than expected, reserve produce tops up your delivery</li>
+          <li>If primary tree yields less, reserve produce tops up your delivery</li>
           <li>Handpicked at peak ripeness, packed fresh on dispatch day</li>
         </ul>
         <div class="tree-allocation-note">
@@ -480,31 +575,56 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.6);padding:4rem 0 2rem
         </div>
       </div>
       <div class="fade-in" style="display:flex;flex-direction:column;gap:1.5rem;">
-        <div class="tree-card">
-          <div class="nameplate" style="margin-bottom:1rem;">
-            <div class="nameplate-id" style="font-size:1rem;">KUTCH-KESAR-0472</div>
-            <div class="nameplate-label">Basic Family · Season 2025</div>
-          </div>
-          <div style="font-size:.78rem;color:rgba(253,248,240,.5);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.5rem;">Package</div>
-          <div style="font-size:1rem;font-weight:600;color:var(--cream);margin-bottom:1rem;">Basic Family Package</div>
+        <div class="qr-img-wrap">
+          <img src="images/qr-tree-tag.png" alt="BookAMango reserved tree QR tag">
+        </div>
+        <div class="qr-note">
+          Each reserved tree has a unique Bookamango Tree ID tag. The QR concept allows customers to scan and view their tree details, harvest updates, and seasonal journey — coming soon as a live digital feature.
+        </div>
+        <div class="tree-card" style="margin-top:0;">
+          <div style="font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--cream);margin-bottom:1rem;">Your Tree. Your Mangoes. Our Promise.</div>
           <ul class="tree-benefits" style="margin-top:0;">
-            <li>Personalised orchard allocation</li>
-            <li>Seasonal harvest updates</li>
-            <li>Premium farm-to-home delivery</li>
-            <li>Approx. 20–30 kg harvest included</li>
+            <li>Personalised orchard nameplate with your Tree ID</li>
+            <li>Seasonal WhatsApp harvest updates</li>
+            <li>Farm-fresh premium delivery to your home</li>
+            <li>Backed by our minimum yield guarantee</li>
           </ul>
         </div>
-        <div class="tree-card">
-          <div style="font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--cream);margin-bottom:1rem;">How Allocation Works</div>
-          <ul class="tree-benefits" style="margin-top:0;">
-            <li>Select your package and complete booking</li>
-            <li>Receive your unique Tree Allocation ID (e.g. TREE27MGAL0320)</li>
-            <li>Your nameplate is placed on your tree at the farm</li>
-            <li>Receive seasonal orchard updates via WhatsApp</li>
-            <li>Mangoes handpicked when perfectly ripe</li>
-            <li>Delivered directly to your doorstep across India</li>
-          </ul>
-        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-section" id="how">
+  <div class="container">
+    <div class="section-eyebrow">Simple Process</div>
+    <h2 class="section-title">How It <em>Works</em></h2>
+    <p class="section-lead">Four simple steps from reservation to your doorstep.</p>
+    <div class="steps-grid">
+      <div class="step-item fade-in">
+        <div class="step-num">1</div>
+        <span class="step-icon">🌳</span>
+        <div class="step-title">Choose Your Tree or Mango Box</div>
+        <p class="step-desc">Select a tree reservation package or a direct mango box order that suits your family.</p>
+      </div>
+      <div class="step-item fade-in">
+        <div class="step-num">2</div>
+        <span class="step-icon">📱</span>
+        <div class="step-title">Reserve Online via WhatsApp</div>
+        <p class="step-desc">WhatsApp us to confirm your reservation. Receive your unique Tree Allocation ID after payment.</p>
+      </div>
+      <div class="step-item fade-in">
+        <div class="step-num">3</div>
+        <span class="step-icon">🌿</span>
+        <div class="step-title">We Nurture, Harvest & Pack</div>
+        <p class="step-desc">Our team carefully manages your tree through the season — from care and flowering to handpicking at peak ripeness.</p>
+      </div>
+      <div class="step-item fade-in">
+        <div class="step-num">4</div>
+        <span class="step-icon">🏠</span>
+        <div class="step-title">Fresh Mangoes Delivered to Your Home</div>
+        <p class="step-desc">Premium Kutchi Kesar mangoes packed fresh at the farm and delivered directly to your doorstep across India.</p>
       </div>
     </div>
   </div>
@@ -517,7 +637,7 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.6);padding:4rem 0 2rem
     <h2 class="section-title">Choose Your<br><em>Orchard Package</em></h2>
     <p class="section-lead" style="margin-bottom:0;">Reserve your seasonal Kutchi Kesar mango allocation today. Each package includes a personalised tree ID, harvest updates, and direct farm delivery.</p>
 
-    <div class="packages-grid">
+    <div class="packages-grid" style="margin-top:3.5rem;">
 
       <!-- Basic -->
       <div class="pkg-card fade-in">
@@ -525,9 +645,9 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.6);padding:4rem 0 2rem
           <span class="pkg-icon">🌿</span>
           <div class="pkg-name">Basic Family Package</div>
           <div class="pkg-tagline">Perfect for small families</div>
-          <div class="pkg-price">₹4,999</div>
+          <div class="pkg-price">₹5,499</div>
           <div class="pkg-yield">Approx. 20–30 kg harvest · 1 tree allocation</div>
-          <div class="pkg-id-preview">TREE**MGAL****</div>
+          <div class="pkg-id-preview">BKMG-****</div>
         </div>
         <div class="pkg-body">
           <ul class="pkg-features">
@@ -538,7 +658,8 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.6);padding:4rem 0 2rem
             <li>Pan-India delivery available</li>
             <li>Minimum yield guarantee</li>
           </ul>
-          <a href="https://wa.me/917448425888?text=Hi%20Chauhan%20Mango%20Farm%2C%20I%27d%20like%20to%20reserve%20the%20Basic%20Family%20Package%20%28%E2%82%B94999%29.%20Please%20share%20details%20and%20payment%20options." class="pkg-cta" target="_blank" rel="noopener">💬 Reserve via WhatsApp</a>
+          <div class="pkg-delivery-note">🚚 Delivery charges extra based on location and order quantity. Final delivery cost will be calculated at checkout.</div>
+          <a href="https://wa.me/917448425888?text=Hi%20BookAMango.in!%20I%27d%20like%20to%20reserve%20the%20Basic%20Family%20Package%20%28%E2%82%B94999%29.%20Please%20share%20details." class="pkg-cta" target="_blank" rel="noopener">💬 Reserve via WhatsApp</a>
         </div>
       </div>
 
@@ -551,7 +672,7 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.6);padding:4rem 0 2rem
           <div class="pkg-tagline">Ideal for medium to large families</div>
           <div class="pkg-price">₹8,999</div>
           <div class="pkg-yield">Approx. 40–60 kg harvest · Priority selection</div>
-          <div class="pkg-id-preview">TREE**MGAL****</div>
+          <div class="pkg-id-preview">BKMG-****</div>
         </div>
         <div class="pkg-body">
           <ul class="pkg-features">
@@ -563,7 +684,8 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.6);padding:4rem 0 2rem
             <li>Pan-India priority delivery</li>
             <li>Yield guarantee + reserve backup</li>
           </ul>
-          <a href="https://wa.me/917448425888?text=Hi%20Chauhan%20Mango%20Farm%2C%20I%27d%20like%20to%20reserve%20the%20Premium%20Orchard%20Package%20%28%E2%82%B98999%29.%20Please%20share%20details%20and%20payment%20options." class="pkg-cta" target="_blank" rel="noopener">💬 Reserve via WhatsApp</a>
+          <div class="pkg-delivery-note">🚚 Delivery charges extra based on location and order quantity. Final delivery cost will be calculated at checkout.</div>
+          <a href="https://wa.me/917448425888?text=Hi%20BookAMango.in!%20I%27d%20like%20to%20reserve%20the%20Premium%20Orchard%20Package%20%28%E2%82%B98999%29.%20Please%20share%20details." class="pkg-cta" target="_blank" rel="noopener">💬 Reserve via WhatsApp</a>
         </div>
       </div>
 
@@ -573,9 +695,9 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.6);padding:4rem 0 2rem
           <span class="pkg-icon">👑</span>
           <div class="pkg-name">Royal Kesar Experience</div>
           <div class="pkg-tagline">Luxury gifting & large families</div>
-          <div class="pkg-price">₹14,999</div>
+          <div class="pkg-price">₹15,499</div>
           <div class="pkg-yield">Approx. 70–90 kg harvest · VIP support</div>
-          <div class="pkg-id-preview">TREE**MGAL****</div>
+          <div class="pkg-id-preview">BKMG-****</div>
         </div>
         <div class="pkg-body">
           <ul class="pkg-features">
@@ -587,7 +709,8 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.6);padding:4rem 0 2rem
             <li>Corporate gifting support</li>
             <li>Maximum yield guarantee</li>
           </ul>
-          <a href="https://wa.me/917448425888?text=Hi%20Chauhan%20Mango%20Farm%2C%20I%27d%20like%20to%20enquire%20about%20the%20Royal%20Kesar%20Experience%20package%20%28%E2%82%B914999%29.%20Please%20share%20details." class="pkg-cta" target="_blank" rel="noopener">💬 Reserve via WhatsApp</a>
+          <div class="pkg-delivery-note">🚚 Delivery charges extra based on location and order quantity. Final delivery cost will be calculated at checkout.</div>
+          <a href="https://wa.me/917448425888?text=Hi%20BookAMango.in!%20I%27d%20like%20to%20enquire%20about%20the%20Royal%20Kesar%20Experience%20package%20%28%E2%82%B914999%29.%20Please%20share%20details." class="pkg-cta dark" target="_blank" rel="noopener">💬 Reserve via WhatsApp</a>
         </div>
       </div>
 
@@ -595,130 +718,238 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.6);padding:4rem 0 2rem
   </div>
 </section>
 
-<!-- SHOP -->
+<!-- SHOP — ORDER MANGO BOXES -->
 <section class="shop-section" id="shop">
   <div class="container">
 
     <div class="shop-hero fade-in">
-      <img src="assets/premium-box-closeup.jpg" alt="Premium Kutchi Kesar mango boxes">
+      <img src="images/packing-box.png" alt="Premium Kutchi Kesar mango boxes">
       <div class="shop-hero-text">
-        <h2>Premium Kesar Mango Boxes</h2>
+        <h2>Order Farm Fresh Kutchi Kesar Mangoes</h2>
         <p>Handpicked from our Kutch orchard — delivered to your door</p>
       </div>
     </div>
 
-    <div class="section-eyebrow">Shop Direct</div>
-    <h2 class="section-title">Order Fresh <em>Mango Boxes</em></h2>
-    <p class="section-lead" style="margin-bottom:3rem;">Harvest season starts from the 4th week of April. Pre-order now to ensure farm-fresh Kutchi Kesar mangoes reach you at peak ripeness.</p>
-    <p class="section-lead" style="margin-top:-2rem;margin-bottom:2rem;color:#7a5a2b;"><strong>Seasonal Offer:</strong> ₹299 OFF on orders above ₹2,999. Delivery charges extra based on location and order quantity. Final delivery cost will be calculated at checkout.</p>
+    <div class="section-eyebrow">Direct Order</div>
+    <h2 class="section-title">Order Farm Fresh<br><em>Kutchi Kesar Mangoes</em></h2>
+    <p class="section-lead" style="margin-bottom:1.5rem;">Handpicked premium Kutchi Kesar mangoes packed fresh at the farm for your family. Order directly below.</p>
+
+    <!-- Offer Banner -->
+    <div class="shop-offer-banner fade-in">
+      <div class="offer-text">🎉 Seasonal Offer: <strong>₹299 OFF</strong> on orders above ₹2,999 &nbsp;·&nbsp; Reserve More, Save More</div>
+      <div class="offer-badge">Limited Season Offer</div>
+    </div>
 
     <div class="shop-grid">
       <div class="shop-card fade-in">
         <div class="shop-card-img">
-          <img src="assets/dozen-kesar-box.jpg" alt="A dozen Kesar mangoes">
-          <span class="shop-badge green">Pre-Order</span>
-        </div>
-        <div class="shop-card-body">
-          <div class="shop-card-title">Kesar Mango — A Dozen</div>
-          <p class="shop-card-sub">12 naturally ripened, handpicked Kutchi Kesar mangoes. Ideal for a family to experience the Queen of Mangoes.</p>
-          <div class="shop-price-row"><span class="amt">Price TBA</span><span class="unit">/ dozen</span></div>
-          <a href="https://wa.me/917448425888?text=Hi%2C%20I%27d%20like%20to%20order%201%20dozen%20Kutchi%20Kesar%20mangoes%20%28price%20to%20be%20finalized%29." class="shop-cta" target="_blank" rel="noopener">💬 Order on WhatsApp</a>
-        </div>
-      </div>
-
-      <div class="shop-card fade-in">
-        <div class="shop-card-img">
-          <img src="assets/5kg-kesar-box.jpg" alt="5 kg Kutchi Kesar mango box">
+          <img src="images/mango-basket.jpg" alt="5 KG Kutchi Kesar Mango Box">
           <span class="shop-badge orange">Premium</span>
         </div>
         <div class="shop-card-body">
           <div class="shop-card-title">5 KG Kutchi Kesar Mango Box</div>
-          <p class="shop-card-sub">A premium 5 KG box of naturally ripened Kutchi Kesar mangoes. Perfect for family orders and farm-fresh seasonal gifting.</p>
+          <p class="shop-card-sub">Handpicked premium Kutchi Kesar mangoes packed fresh at the farm for your family. Naturally ripened, full saffron aroma.</p>
           <div class="shop-price-row"><span class="amt">₹849</span><span class="unit">/ 5 KG box</span></div>
-          <a href="https://wa.me/917448425888?text=Hi%2C%20I%27d%20like%20to%20order%20the%205%20KG%20Kutchi%20Kesar%20Mango%20Box%20%28%E2%82%B9849%29." class="shop-cta" target="_blank" rel="noopener">💬 Order on WhatsApp</a>
+          <div class="shop-delivery-note">🚚 Delivery charges extra based on location</div>
+          <a href="https://wa.me/917448425888?text=Hi%20BookAMango.in!%20I%27d%20like%20to%20order%20the%205%20KG%20Kutchi%20Kesar%20Mango%20Box%20%28%E2%82%B9849%29.%20Please%20confirm%20availability%20and%20delivery%20charges." class="shop-cta" target="_blank" rel="noopener">💬 Order on WhatsApp</a>
         </div>
       </div>
 
       <div class="shop-card fade-in">
         <div class="shop-card-img">
-          <img src="assets/family-unboxing.jpg" alt="Kesar mango bundle">
-          <span class="shop-badge red">3+1 Free</span>
+          <img src="images/dozen-box.png" alt="Premium Kesar Mango Dozen Box">
+          <span class="shop-badge green">Gifting</span>
         </div>
         <div class="shop-card-body">
-          <div class="shop-card-title">Premium Bundle (3+1)</div>
-          <p class="shop-card-sub">Buy 3 boxes of Kesar mangoes, get 1 free. Ideal for large families or as a season gift to loved ones.</p>
-          <div class="shop-price-row"><span class="amt">₹2,499</span><span class="unit">/ bundle</span></div>
-          <a href="https://wa.me/917448425888?text=Hi%2C%20I%27d%20like%20to%20order%20the%20Premium%20Kesar%20Bundle%203%2B1%20%28%E2%82%B92499%29." class="shop-cta" target="_blank" rel="noopener">💬 Order on WhatsApp</a>
-        </div>
-      </div>
-
-      <div class="shop-card fade-in">
-        <div class="shop-card-img">
-          <img src="assets/gift-box.jpg" alt="Luxury gift mango box">
-          <span class="shop-badge orange">Gift Box</span>
-        </div>
-        <div class="shop-card-body">
-          <div class="shop-card-title">Luxury Gift Kesar Box</div>
-          <p class="shop-card-sub">Premium Kutchi Kesar mangoes in a curated gift box — perfect for corporate gifting, Eid, or special occasions.</p>
-          <div class="shop-price-row"><span class="amt">₹3,999</span><span class="unit">/ gift box</span></div>
-          <a href="https://wa.me/917448425888?text=Hi%2C%20I%27d%20like%20to%20order%20the%20Luxury%20Gift%20Kesar%20Box%20%28%E2%82%B93999%29." class="shop-cta" target="_blank" rel="noopener">💬 Order on WhatsApp</a>
+          <div class="shop-card-title">Premium Kesar Mango Dozen Box</div>
+          <p class="shop-card-sub">A premium dozen box of naturally ripened Kesar mangoes, perfect for gifting and family enjoyment. Each mango handpicked for aroma and sweetness.</p>
+          <div class="shop-price-row"><span class="amt">₹599</span><span class="unit">/ dozen box</span></div>
+          <div class="shop-delivery-note">🚚 Delivery charges extra based on location</div>
+          <a href="https://wa.me/917448425888?text=Hi%20BookAMango.in!%20I%27d%20like%20to%20order%20the%20Premium%20Kesar%20Mango%20Dozen%20Box%20%28%E2%82%B9599%29.%20Please%20confirm%20availability%20and%20delivery%20charges." class="shop-cta" target="_blank" rel="noopener">💬 Order on WhatsApp</a>
         </div>
       </div>
     </div>
 
-    <!-- Bundle Detail -->
-    <div class="bundle-detail fade-in">
-      <div class="bundle-grid">
-        <div class="bundle-img">
-          <img src="assets/premium-box-closeup.jpg" alt="Premium Kesar bundle">
-          <span class="bundle-img-label">★ Best Value</span>
-        </div>
-        <div class="bundle-body">
-          <div class="bundle-title">Premium Mangoes Bundle (3+1)</div>
-          <p style="font-size:.78rem;color:var(--warm-grey);text-transform:uppercase;letter-spacing:.1em;margin-top:.3rem;">Kutchi Kesar · Khombhdi Moti, Gujarat</p>
-          <div class="bundle-price-row">
-            <span class="bundle-price">₹2,499</span>
-            <span class="bundle-tag">⚡ Pre-Order Open</span>
-          </div>
-          <p class="bundle-desc">Harvest season starts from the 4th week of April. Pre-order now to ensure farm-fresh Kesar mangoes this season.<br><br>
-          Enjoy more of the season's finest with our 3+1 Kesar Mango Bundle — buy three boxes of premium Kesar mangoes and receive one additional box at no extra cost. Each box contains a dozen naturally ripened, handpicked mangoes, carefully packed to maintain freshness from farm to door.<br><br>
-          Grown in the mineral-rich soil of Kutch and delivered with care, these mangoes are known for their rich aroma, vibrant saffron colour, and deep natural sweetness. Ideal for enjoying at home, gifting to family, or stocking up during the short harvest window.</p>
-          <div class="bundle-includes">
-            <h4>Bundle Includes</h4>
-            <ul>
-              <li>Buy 3 boxes of Kesar mangoes, get 1 box free</li>
-              <li>Each box weight: 3.5 – 4.5 kg</li>
-              <li>Total weight: 14.5 – 19.5 kg across 4 boxes</li>
-              <li>₹299 OFF automatically applies on orders above ₹2,999</li>
-              <li>Checkout logic: subtotal + delivery charges − discount = final total</li>
-              <li>Naturally ripened · No chemical treatment</li>
-              <li>Premium packaging included</li>
-            </ul>
-          </div>
-          <a href="https://wa.me/917448425888?text=Hi%2C%20I%27d%20like%20to%20pre-order%20the%20Premium%20Kesar%20Mango%20Bundle%203%2B1%20%28%E2%82%B92499%29.%20Please%20confirm%20availability." class="shop-cta" style="max-width:340px;" target="_blank" rel="noopener">💬 Pre-Order This Bundle</a>
-        </div>
-      </div>
+    <div class="shop-note fade-in">
+      <strong>Checkout Logic:</strong> Subtotal + Delivery Charges − Seasonal Discount (if applicable) = Final Total &nbsp;·&nbsp; <strong>Seasonal Offer:</strong> ₹299 OFF on orders above ₹2,999 &nbsp;·&nbsp; Delivery charges are calculated based on your pincode and order quantity.
     </div>
 
-    <div class="shop-note">
-      <strong>📦 Bulk & Corporate Orders Welcome</strong> — Looking for large quantities or gift hampers?<br>
-      WhatsApp us at <strong>+91 74484 25888</strong>. We customise packaging and quantities for businesses and events.
+  </div>
+</section>
+
+<!-- MANGO QUALITY -->
+<section class="quality-section" id="quality">
+  <div class="container">
+    <div class="quality-grid">
+      <div class="fade-in">
+        <div class="section-eyebrow">Mango Quality</div>
+        <h2 class="section-title">Premium Kesar<br><em>Mango Quality</em></h2>
+        <p class="section-lead">Our mangoes are selected for aroma, sweetness, saffron-coloured pulp, and natural farm freshness. Each box is carefully checked before packing.</p>
+        <ul class="quality-points" style="margin-top:2rem;">
+          <li><div class="feature-icon">🟡</div><div class="feature-text"><strong>Saffron-Gold Pulp</strong><p style="font-size:.85rem;color:var(--warm-grey);margin-top:.2rem;">Rich, deep saffron-coloured pulp with natural sweetness and zero fibre.</p></div></li>
+          <li><div class="feature-icon">🌸</div><div class="feature-text"><strong>Royal Aroma</strong><p style="font-size:.85rem;color:var(--warm-grey);margin-top:.2rem;">A signature fragrance that fills the room — unmistakably Kesar.</p></div></li>
+          <li><div class="feature-icon">✋</div><div class="feature-text"><strong>Handpicked at Peak Ripeness</strong><p style="font-size:.85rem;color:var(--warm-grey);margin-top:.2rem;">Harvested only when naturally ripe — no forced ripening agents.</p></div></li>
+          <li><div class="feature-icon">🔍</div><div class="feature-text"><strong>Quality-Checked Before Packing</strong><p style="font-size:.85rem;color:var(--warm-grey);margin-top:.2rem;">Every box is inspected at the farm before it is sealed and dispatched.</p></div></li>
+        </ul>
+      </div>
+      <div class="fade-in">
+        <div class="quality-img">
+          <img src="images/ripe-mango.png" alt="Premium Kesar mango saffron pulp">
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- HOW IT WORKS -->
-<section class="how-section" id="how">
+<!-- PREMIUM PACKAGING -->
+<section class="packaging-section" id="packaging">
   <div class="container">
-    <div style="text-align:center;max-width:600px;margin:0 auto;">
-      <div class="section-eyebrow" style="justify-content:center;">How It Works</div>
-      <h2 class="section-title">From Our Orchard<br>to Your <em>Doorstep</em></h2>
+    <div class="packaging-grid">
+      <div class="fade-in">
+        <div class="packaging-img">
+          <img src="images/packing-box.png" alt="BookAMango premium packaging box">
+        </div>
+      </div>
+      <div class="fade-in">
+        <div class="section-eyebrow">Premium Packaging</div>
+        <h2 class="section-title">Premium<br><em>Farm Packing</em></h2>
+        <p class="section-lead">Every BookAMango box is carefully packed at our farm to protect the natural freshness, aroma, and premium quality of Kesar mangoes.</p>
+        <ul class="packaging-points" style="margin-top:2rem;">
+          <li>Farm-packed the same day as harvest — maximum freshness</li>
+          <li>Individual cushioning to protect each mango during transit</li>
+          <li>Designed to preserve aroma and natural ripening in transit</li>
+          <li>Premium branded packaging — ready for gifting</li>
+          <li>No plastic foam or harmful packaging materials</li>
+          <li>Ideal for corporate gifting, festivals, and special occasions</li>
+        </ul>
+      </div>
     </div>
-    <div class="steps-grid">
-      <div class="step-item fade-in"><div class="step-num">1</div><span class="step-icon">📲</span><div class="step-title">Choose & WhatsApp</div><p class="step-desc">Select your package or box, send us a WhatsApp message with your requirement and delivery address.</p></div>
-      <div class="step-item fade-in"><div class="step-num">2</div><span class="step-icon">✅</span><div class="step-title">Confirm & Pay</div><p class="step-desc">We confirm availability, share pricing, and you secure your order with an advance payment.</p></div>
-      <div class="step-item fade-in"><div class="step-num">3</div><span class="step-icon">🏷️</span><div class="step-title">Get Your Tree ID</div><p class="step-desc">For reservation packages, receive your unique Tree Allocation ID (e.g. TREE27MGAL0320) and seasonal updates.</p></div>
-      <div class="step-item fade-in"><div class="step-num">4</div><span class="step-icon">🚚</span><div class="step-title">Delivered to You</div><p class="step-desc">Mangoes handpicked at peak ripeness, packed fresh on dispatch day, delivered across India.</p></div>
+  </div>
+</section>
+
+<!-- FARM-TO-HOME DELIVERY -->
+<section class="delivery-section" id="delivery">
+  <div class="container">
+    <div class="delivery-grid">
+      <div class="fade-in">
+        <div class="section-eyebrow">Farm-to-Home</div>
+        <h2 class="section-title">Delivered<br><em>Fresh to Your Door</em></h2>
+        <p class="section-lead">From our Kutch orchard to your doorstep, every mango is packed with care and delivered fresh based on your location and order quantity.</p>
+        <ul class="packaging-points" style="margin-top:2rem;">
+          <li>Dispatched directly from our Kutch farm</li>
+          <li>Pan-India delivery — all major cities covered</li>
+          <li>Delivery charges based on location and order size</li>
+          <li>WhatsApp tracking updates after dispatch</li>
+          <li>Delivered within 1–3 working days after dispatch</li>
+          <li>Ensure someone is available to receive fresh produce</li>
+        </ul>
+        <a href="https://wa.me/917448425888?text=Hi%20BookAMango.in!%20I%27d%20like%20to%20check%20delivery%20availability%20and%20charges%20to%20my%20location." target="_blank" rel="noopener" class="btn-primary" style="margin-top:2rem;display:inline-flex;">💬 Check Delivery to My Location</a>
+      </div>
+      <div class="fade-in">
+        <div class="delivery-img">
+          <img src="images/delivery.png" alt="BookAMango doorstep delivery">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDER / TEAM -->
+<section class="team-section" id="team">
+  <div class="container">
+    <div class="section-eyebrow">The People Behind BookAMango</div>
+    <h2 class="section-title">Meet the People<br><em>Behind BookAMango</em></h2>
+    <p class="section-lead">Grown with love. Packed with care. Delivered with pride.</p>
+    <div class="team-grid">
+      <div class="fade-in">
+        <div class="person-card">
+          <img src="images/founder.png" alt="BookAMango Founder">
+          <div class="person-caption">
+            <div class="person-name">Our Founder</div>
+            <div class="person-role">BookAMango · Kutch Kesar Farm</div>
+            <p class="person-quote">"At BookAMango, we do not just grow mangoes — we grow trust, tradition, and farm-to-home freshness."</p>
+          </div>
+        </div>
+      </div>
+      <div class="fade-in">
+        <div class="person-card">
+          <img src="images/team.png" alt="BookAMango Team">
+          <div class="person-caption">
+            <div class="person-name">Our Farm Team</div>
+            <div class="person-role">Packing, Harvesting & Delivery</div>
+            <p class="person-quote">Our team carefully manages every stage — from tree care and harvesting to packing and delivery — ensuring every box meets our premium standard.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAMILY EXPERIENCE -->
+<section class="family-section" id="family">
+  <div class="container" style="position:relative;z-index:1;">
+    <div class="section-eyebrow" style="color:var(--saffron-light)">Family Experience</div>
+    <h2 class="section-title">A Mango Experience<br>for the Whole <em>Family</em></h2>
+    <p class="section-lead">BookAMango is built for families who want more than just mangoes — they want freshness, trust, and a real connection with the farm.</p>
+    <div class="family-grid">
+      <div class="fade-in">
+        <div class="family-img">
+          <img src="images/family-mango.png" alt="Family enjoying BookAMango mangoes at home">
+        </div>
+      </div>
+      <div class="fade-in">
+        <ul class="family-points" style="margin-top:1rem;">
+          <li>Receive your box and unbox fresh farm mangoes together</li>
+          <li>Children love the bright saffron colour and natural sweetness</li>
+          <li>Perfect for family gatherings, festivals, and gifting</li>
+          <li>The tree reservation creates a personal connection to the farm</li>
+          <li>Your children will know exactly where their mangoes come from</li>
+          <li>Farm-fresh taste that no supermarket mango can replicate</li>
+        </ul>
+        <div style="margin-top:2.5rem;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:4px;padding:1.5rem;">
+          <div style="font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--cream);margin-bottom:.6rem;">Why families choose BookAMango</div>
+          <div style="font-size:.875rem;color:rgba(253,248,240,.65);line-height:1.75;">Real farm. Real trees. Real mangoes. No middlemen. No cold storage. Just fresh Kutchi Kesar mangoes from our Kutch orchard delivered with love to your home.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section" id="testimonials">
+  <div class="container">
+    <div class="section-eyebrow">Customer Love</div>
+    <h2 class="section-title">What Our<br><em>Customers Say</em></h2>
+    <p class="section-lead">Real words from real families who have tasted the BookAMango difference.</p>
+    <div class="testimonials-grid">
+      <div class="testi-card fade-in">
+        <div class="testi-text">"The mangoes were fresh, sweet, and beautifully packed. It felt like receiving mangoes directly from a family farm. The saffron pulp was absolutely gorgeous."</div>
+        <div class="testi-footer">
+          <div><div class="testi-name">Priya Mehta</div><div class="testi-loc">Mumbai, Maharashtra</div></div>
+          <div class="testi-stars">★★★★★</div>
+        </div>
+      </div>
+      <div class="testi-card fade-in">
+        <div class="testi-text">"The tree reservation concept is very unique. My family loved the idea of having our own mango tree. We received updates through the season — it felt so personal."</div>
+        <div class="testi-footer">
+          <div><div class="testi-name">Rahul Shah</div><div class="testi-loc">Ahmedabad, Gujarat</div></div>
+          <div class="testi-stars">★★★★★</div>
+        </div>
+      </div>
+      <div class="testi-card fade-in">
+        <div class="testi-text">"The packaging was premium and the mangoes had amazing aroma and taste. We ordered for gifting and everyone was impressed. Will definitely order again next season."</div>
+        <div class="testi-footer">
+          <div><div class="testi-name">Anjali Kapoor</div><div class="testi-loc">Surat, Gujarat</div></div>
+          <div class="testi-stars">★★★★★</div>
+        </div>
+      </div>
+      <div class="testi-card fade-in">
+        <div class="testi-text">"BookAMango feels trustworthy because everything looks natural, farm-based, and personal. No artificial ripening, no middlemen. Exactly what I was looking for."</div>
+        <div class="testi-footer">
+          <div><div class="testi-name">Vishal Patel</div><div class="testi-loc">Pune, Maharashtra</div></div>
+          <div class="testi-stars">★★★★★</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -726,54 +957,55 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.6);padding:4rem 0 2rem
 <!-- GALLERY -->
 <section class="gallery-section" id="gallery">
   <div class="container">
-    <div class="section-eyebrow" style="color:var(--saffron-light)">Orchard Gallery</div>
-    <h2 class="section-title">Life at<br><em>Chauhan Farm</em></h2>
-    <p class="section-lead">A glimpse into the orchard — where the magic begins each season in the heart of Kutch.</p>
+    <div class="section-eyebrow" style="color:var(--saffron-light)">Our Farm</div>
+    <h2 class="section-title">From Our<br><em>Kutch Orchard</em></h2>
+    <p class="section-lead">A glimpse into the orchard, the team, and the mangoes that make BookAMango special.</p>
     <div class="gallery-grid">
       <div class="gallery-item tall fade-in">
-        <img src="assets/orchard-harvest-aerial.jpg" alt="Orchard harvest Kutch">
-        <div class="gallery-caption">Kutch Orchard · Harvest Season</div>
+        <img src="images/hero-orchard.png" alt="Drone view of Kutch mango orchard at sunset">
+        <div class="gallery-caption">Our Kutch Orchard · Aerial View</div>
       </div>
       <div class="gallery-item fade-in">
-        <img src="assets/ripe-kesar-closeup.jpg" alt="Ripe Kesar mangoes">
-        <div class="gallery-caption">Ripe Kesar · Ready to Pick</div>
+        <img src="images/reserved-tree-sign.png" alt="Reserved tree sign in the orchard">
+        <div class="gallery-caption">Reserved Tree Board</div>
       </div>
       <div class="gallery-item fade-in">
-        <img src="assets/packing-team.jpg" alt="Mango packing">
-        <div class="gallery-caption">Packing Fresh · Farm to Box</div>
+        <img src="images/orchard-worker.png" alt="Farm care and tree maintenance">
+        <div class="gallery-caption">Farm Care</div>
       </div>
       <div class="gallery-item fade-in">
-        <img src="assets/delivery-box.jpg" alt="Mango boxes ready">
-        <div class="gallery-caption">Farm Fresh · Home Delivery</div>
+        <img src="images/founder.png" alt="BookAMango founder in the orchard">
+        <div class="gallery-caption">Our Founder</div>
       </div>
       <div class="gallery-item fade-in">
-        <img src="assets/tree-tag-qr.jpg" alt="Orchard rows Kutch">
-        <div class="gallery-caption">Reserved Tree ID · QR Tracking</div>
+        <img src="images/ripe-mango.png" alt="Ripe Kesar mangoes on tree">
+        <div class="gallery-caption">Ripe Kesar Mangoes</div>
+      </div>
+      <div class="gallery-item fade-in">
+        <img src="images/team.png" alt="BookAMango team at packing shed">
+        <div class="gallery-caption">Packing Team</div>
+      </div>
+      <div class="gallery-item fade-in">
+        <img src="images/packing-box.png" alt="BookAMango premium green box">
+        <div class="gallery-caption">Premium Farm Box</div>
+      </div>
+      <div class="gallery-item fade-in">
+        <img src="images/family-mango.png" alt="Family enjoying mangoes at home">
+        <div class="gallery-caption">Family Experience</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- VIDEO SECTION -->
-<section class="video-section" id="video">
-  <div class="container">
-    <div class="video-grid">
-      <div class="fade-in">
-        <div class="section-eyebrow">Farm Stories</div>
-        <h2 class="section-title">See the<br><em>Orchard</em> in Action</h2>
-        <p class="section-lead" style="margin-bottom:2rem;">From flowering to harvest — our orchard comes alive every season. Videos coming soon as we document the 2025 harvest.</p>
-        <div class="video-items">
-          <div class="video-item"><div class="video-thumb">🌳</div><div><div class="video-item-title">Orchard Walk-through</div><div class="video-item-desc">A tour of our Khombhdi Moti farm and the Kesar trees</div></div></div>
-          <div class="video-item"><div class="video-thumb">🥭</div><div><div class="video-item-title">Harvesting Process</div><div class="video-item-desc">How we handpick mangoes at the right stage of ripeness</div></div></div>
-          <div class="video-item"><div class="video-thumb">📦</div><div><div class="video-item-title">Packing & Dispatch</div><div class="video-item-desc">From tree to box — our careful farm packing process</div></div></div>
-        </div>
-      </div>
-      <div class="fade-in">
-        <div class="video-placeholder">
-          <div class="play-btn">▶</div>
-          <div class="video-label">Farm Video · Coming This Season</div>
-        </div>
-      </div>
+<!-- FINAL CTA -->
+<section class="final-cta-section" id="final-cta">
+  <div class="container" style="text-align:center;">
+    <div class="section-eyebrow" style="justify-content:center;">Reserve Today</div>
+    <h2 class="section-title" style="margin:0 auto 1rem;">Reserve Your Kesar<br><em>Mango Tree Today</em></h2>
+    <p class="section-lead" style="margin:0 auto 2.5rem;">Bring home the taste of premium Kutchi Kesar mangoes from our Kutch orchard. Limited seasonal allocations available.</p>
+    <div class="final-cta-btns">
+      <a href="https://wa.me/917448425888?text=Hi%20BookAMango.in!%20I%27d%20like%20to%20reserve%20a%20Kesar%20Mango%20Tree%20this%20season.%20Please%20share%20package%20details." target="_blank" rel="noopener" class="btn-primary">🌳 Reserve Your Tree</a>
+      <a href="#shop" class="btn-primary" style="background:var(--green-deep);">🥭 Order Mango Box</a>
     </div>
   </div>
 </section>
@@ -784,25 +1016,11 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.6);padding:4rem 0 2rem
     <div class="season-grid">
       <div class="fade-in">
         <div class="section-eyebrow">Harvest Calendar</div>
-        <h2 class="section-title">When to<br><em>Book</em></h2>
-        <p class="section-lead">Kesar season is precious and short. Knowing when to reserve ensures you never miss the finest fruit of the year.</p>
-        <div class="season-info">
-          <div class="info-row"><span class="info-label">🌸 Flowering Season</span><span class="info-val">Feb – March</span></div>
-          <div class="info-row"><span class="info-label">📦 Pre-booking Opens</span><span class="info-val">4th Week of April</span></div>
-          <div class="info-row"><span class="info-label">🥭 Main Harvest</span><span class="info-val">May – June</span></div>
-          <div class="info-row"><span class="info-label">⭐ Peak Quality</span><span class="info-val">Late May – Early June</span></div>
-          <div class="info-row"><span class="info-label">🚚 Deliveries Begin</span><span class="info-val">May onwards</span></div>
-          <div class="info-row"><span class="info-label">📍 Origin</span><span class="info-val">Khombhdi Moti, Kutch, Gujarat</span></div>
-        </div>
-      </div>
-      <div class="fade-in">
-        <div style="margin-bottom:1.5rem;">
-          <div class="section-eyebrow">Season at a Glance</div>
-          <p style="font-size:.85rem;color:var(--warm-grey);margin-top:.5rem;">Book early — allocations are limited each season</p>
-        </div>
+        <h2 class="section-title">Kesar Mango<br><em>Season 2025</em></h2>
+        <p class="section-lead">The Kutchi Kesar season is short and precious — typically May to July, with peak quality in May and June.</p>
         <div class="season-months">
           <div class="month-card"><div class="month-name">Jan</div><div class="month-status">Off-season</div></div>
-          <div class="month-card"><div class="month-name">Feb</div><div class="month-status">Flowering</div></div>
+          <div class="month-card"><div class="month-name">Feb</div><div class="month-status">Off-season</div></div>
           <div class="month-card"><div class="month-name">Mar</div><div class="month-status">Flowering</div></div>
           <div class="month-card active"><div class="month-name">Apr</div><div class="month-status">Pre-order</div></div>
           <div class="month-card peak"><div class="month-name">May</div><div class="month-status">★ Peak</div></div>
@@ -819,6 +1037,18 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.6);padding:4rem 0 2rem
           </div>
         </div>
       </div>
+      <div class="fade-in">
+        <div class="season-info">
+          <div class="info-row"><span class="info-label">Season Start</span><span class="info-val">Late April / Early May</span></div>
+          <div class="info-row"><span class="info-label">Peak Season</span><span class="info-val">May – June</span></div>
+          <div class="info-row"><span class="info-label">Season End</span><span class="info-val">Late July</span></div>
+          <div class="info-row"><span class="info-label">Variety</span><span class="info-val">Kutchi Kesar — Premium Grade</span></div>
+          <div class="info-row"><span class="info-label">Origin</span><span class="info-val">Khombhdi Moti, Kutch, Gujarat</span></div>
+          <div class="info-row"><span class="info-label">Ripening</span><span class="info-val">100% Natural — No Chemicals</span></div>
+          <div class="info-row"><span class="info-label">Delivery</span><span class="info-val">Pan-India · Charges Extra</span></div>
+          <div class="info-row"><span class="info-label">Reservations</span><span class="info-val">Open Now — Limited Allocation</span></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -830,54 +1060,14 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.6);padding:4rem 0 2rem
     <h2 class="section-title">The Future of<br><em>Farm-to-Home</em></h2>
     <p class="section-lead">We're building BookAMango.in into a full premium orchard platform. Here's what our customers can look forward to.</p>
     <div class="future-grid">
-      <div class="future-card fade-in">
-        <span class="future-card-icon">📊</span>
-        <div class="future-card-title">Tree Tracking Dashboard</div>
-        <div class="future-card-desc">Monitor your tree allocation, seasonal growth, and harvest status in a personalised online dashboard.</div>
-        <span class="coming-tag">Coming Soon</span>
-      </div>
-      <div class="future-card fade-in">
-        <span class="future-card-icon">⏳</span>
-        <div class="future-card-title">Harvest Countdown</div>
-        <div class="future-card-desc">A live countdown to your expected harvest date — so you know exactly when your mangoes will be on their way.</div>
-        <span class="coming-tag">Coming Soon</span>
-      </div>
-      <div class="future-card fade-in">
-        <span class="future-card-icon">📹</span>
-        <div class="future-card-title">Orchard Live Camera</div>
-        <div class="future-card-desc">Watch your orchard section grow via a live camera feed — experience the farm from your home.</div>
-        <span class="coming-tag">Coming Soon</span>
-      </div>
-      <div class="future-card fade-in">
-        <span class="future-card-icon">🎁</span>
-        <div class="future-card-title">Referral Rewards</div>
-        <div class="future-card-desc">Invite friends and earn loyalty credits redeemable against your next season's reservation.</div>
-        <span class="coming-tag">Coming Soon</span>
-      </div>
-      <div class="future-card fade-in">
-        <span class="future-card-icon">🔄</span>
-        <div class="future-card-title">Season Subscription</div>
-        <div class="future-card-desc">Auto-renew your orchard allocation each year and lock in early-bird pricing for loyal customers.</div>
-        <span class="coming-tag">Coming Soon</span>
-      </div>
-      <div class="future-card fade-in">
-        <span class="future-card-icon">🤖</span>
-        <div class="future-card-title">AI Chatbot Support</div>
-        <div class="future-card-desc">Get instant answers about your reservation, harvest, delivery, and account — anytime on the website.</div>
-        <span class="coming-tag">Coming Soon</span>
-      </div>
-      <div class="future-card fade-in">
-        <span class="future-card-icon">🚚</span>
-        <div class="future-card-title">Live Delivery Tracking</div>
-        <div class="future-card-desc">Track your mango box from the farm to your door in real time — full transparency at every step.</div>
-        <span class="coming-tag">Coming Soon</span>
-      </div>
-      <div class="future-card fade-in">
-        <span class="future-card-icon">💎</span>
-        <div class="future-card-title">Customer Loyalty Program</div>
-        <div class="future-card-desc">Earn points every season, unlock exclusive grades, early harvest access, and premium gift upgrades.</div>
-        <span class="coming-tag">Coming Soon</span>
-      </div>
+      <div class="future-card fade-in"><span class="future-card-icon">📊</span><div class="future-card-title">Tree Tracking Dashboard</div><div class="future-card-desc">Monitor your tree allocation, seasonal growth, and harvest status in a personalised online dashboard.</div><span class="coming-tag">Coming Soon</span></div>
+      <div class="future-card fade-in"><span class="future-card-icon">⏳</span><div class="future-card-title">Harvest Countdown</div><div class="future-card-desc">A live countdown to your expected harvest date — so you know exactly when your mangoes will be on their way.</div><span class="coming-tag">Coming Soon</span></div>
+      <div class="future-card fade-in"><span class="future-card-icon">📹</span><div class="future-card-title">Orchard Live Camera</div><div class="future-card-desc">Watch your orchard section grow via a live camera feed — experience the farm from your home.</div><span class="coming-tag">Coming Soon</span></div>
+      <div class="future-card fade-in"><span class="future-card-icon">🎁</span><div class="future-card-title">Referral Rewards</div><div class="future-card-desc">Invite friends and earn loyalty credits redeemable against your next season's reservation.</div><span class="coming-tag">Coming Soon</span></div>
+      <div class="future-card fade-in"><span class="future-card-icon">🔄</span><div class="future-card-title">Season Subscription</div><div class="future-card-desc">Auto-renew your orchard allocation each year and lock in early-bird pricing for loyal customers.</div><span class="coming-tag">Coming Soon</span></div>
+      <div class="future-card fade-in"><span class="future-card-icon">🤖</span><div class="future-card-title">AI Chatbot Support</div><div class="future-card-desc">Get instant answers about your reservation, harvest, delivery, and account — anytime on the website.</div><span class="coming-tag">Coming Soon</span></div>
+      <div class="future-card fade-in"><span class="future-card-icon">🚚</span><div class="future-card-title">Live Delivery Tracking</div><div class="future-card-desc">Track your mango box from the farm to your door in real time — full transparency at every step.</div><span class="coming-tag">Coming Soon</span></div>
+      <div class="future-card fade-in"><span class="future-card-icon">💎</span><div class="future-card-title">Customer Loyalty Program</div><div class="future-card-desc">Earn points every season, unlock exclusive grades, early harvest access, and premium gift upgrades.</div><span class="coming-tag">Coming Soon</span></div>
     </div>
   </div>
 </section>
@@ -956,8 +1146,8 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.6);padding:4rem 0 2rem
     </div>
     <div class="terms-grid">
       <div class="terms-card fade-in"><h3>📦 Orders & Availability</h3><ul><li>All orders and reservations are subject to seasonal availability.</li><li>Booking confirmation is issued only after advance payment is received.</li><li>Seasonal reservation packages do not constitute ownership of agricultural land or trees.</li><li>Quantities are limited and allocated on a first-come, first-served basis.</li></ul></div>
-      <div class="terms-card fade-in"><h3>💰 Pricing & Payment</h3><ul><li>Prices are set seasonally and may vary based on harvest conditions, grade, and quantity.</li><li>An advance is required to confirm all reservations; balance is payable before dispatch.</li><li>All transactions are in Indian Rupees (INR).</li></ul></div>
-      <div class="terms-card fade-in"><h3>🚚 Delivery</h3><ul><li>Delivery timelines are estimates and may be affected by courier, weather, or agricultural conditions.</li><li>We are not liable for delays caused by third-party courier partners after dispatch.</li><li>Customers must ensure someone is available to receive perishable goods on delivery.</li></ul></div>
+      <div class="terms-card fade-in"><h3>💰 Pricing & Payment</h3><ul><li>Prices are set seasonally and may vary based on harvest conditions, grade, and quantity.</li><li>An advance is required to confirm all reservations; balance is payable before dispatch.</li><li>All transactions are in Indian Rupees (INR).</li><li>Delivery charges are extra and calculated based on location and order quantity.</li></ul></div>
+      <div class="terms-card fade-in"><h3>🚚 Delivery</h3><ul><li>Delivery timelines are estimates and may be affected by courier, weather, or agricultural conditions.</li><li>We are not liable for delays caused by third-party courier partners after dispatch.</li><li>Customers must ensure someone is available to receive perishable goods on delivery.</li><li>Final delivery cost is calculated at checkout based on pincode and order quantity.</li></ul></div>
       <div class="terms-card fade-in"><h3>🔄 Returns & Quality</h3><ul><li>Due to the perishable nature of fresh produce, returns are not accepted once dispatched.</li><li>If goods arrive significantly damaged, contact us within 24 hours with photos for case-by-case review.</li><li>Minor variation in size, weight, and colour is natural for farm produce and does not constitute a defect.</li></ul></div>
       <div class="terms-card fade-in"><h3>🌿 Product Assurance</h3><ul><li>Our mangoes are grown using traditional orchard practices without harmful chemical ripening agents.</li><li>Harvest quantities may vary due to natural agricultural and weather conditions.</li><li>Where primary tree yield falls short, reserve produce is used to meet guaranteed quantities.</li></ul></div>
       <div class="terms-card fade-in"><h3>📋 General</h3><ul><li>These terms may be updated without prior notice. Current terms apply at time of order.</li><li>Disputes shall be subject to jurisdiction in Kutch, Gujarat, India.</li><li>For queries, contact us at +91 74484 25888 via WhatsApp or call.</li></ul></div>
@@ -971,16 +1161,18 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.6);padding:4rem 0 2rem
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="#" class="logo">BookA<span>Mango</span>.in</a>
+        <div class="tagline">Premium Kutchi Kesar Mangoes from Gujarat</div>
         <p>Chauhan Mango Farm — bringing the authentic taste of Kutchi Kesar mangoes directly from our orchard in Khombhdi Moti, Kutch, Gujarat. Operated by Chauhan Enterprise. Farm-direct. Zero compromise.</p>
         <a href="https://wa.me/917448425888?text=Hello%20BookAMango.in!%20I%27d%20like%20to%20enquire%20about%20Kutchi%20Kesar%20mangoes." target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.5rem;background:#25D366;color:white;text-decoration:none;padding:.65rem 1.2rem;border-radius:2px;font-size:.8rem;font-weight:600;">💬 WhatsApp Us</a>
       </div>
       <div>
         <div class="footer-heading">Quick Links</div>
         <ul class="footer-links">
-          <li><a href="#story">Our Farm Story</a></li>
-          <li><a href="#tree">Tree Allocation</a></li>
+          <li><a href="#story">Our Orchard Story</a></li>
+          <li><a href="#tree">Reserve Your Tree</a></li>
           <li><a href="#packages">Seasonal Packages</a></li>
-          <li><a href="#shop">Shop Mango Boxes</a></li>
+          <li><a href="#shop">Order Mango Boxes</a></li>
+          <li><a href="#gallery">Gallery</a></li>
           <li><a href="#season">Harvest Season</a></li>
           <li><a href="#coming-soon">Coming Soon</a></li>
           <li><a href="#location">Find Us</a></li>
@@ -997,7 +1189,7 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.6);padding:4rem 0 2rem
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 BookAMango.in | Operated by Chauhan Enterprise · Khombhadi Moti, Kutch, Gujarat</p>
+      <p>© 2025 BookAMango.in | Operated by Chauhan Enterprise · Khombhdi Moti, Kutch, Gujarat</p>
       <p><a href="#terms">Terms & Conditions</a> &nbsp;·&nbsp; <a href="#packages">Reserve Now</a></p>
     </div>
   </div>
