@@ -1350,7 +1350,78 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.6);padding:4rem 0 2rem
   <div class="wa-pulse"></div>
   <a href="https://wa.me/917448425888?text=Hello%20BookAMango.in!%20I%27d%20like%20to%20book%20Kutchi%20Kesar%20mangoes." target="_blank" rel="noopener">💬 Order on WhatsApp</a>
 </div>
+<!-- BOOKAMANGO LEAD FORM START -->
+<section id="reserve-form" style="padding:70px 20px;background:#fff7e8;">
+  <div style="max-width:900px;margin:auto;background:#ffffff;border-radius:18px;padding:35px;box-shadow:0 15px 45px rgba(0,0,0,0.08);">
+    
+    <h2 style="color:#143d2b;font-size:32px;margin-bottom:10px;text-align:center;">
+      Reserve Your Kesar Mango Tree
+    </h2>
+    <p style="text-align:center;color:#666;margin-bottom:30px;">
+      Fill your details and send your reservation request directly on WhatsApp.
+    </p>
 
+    <form onsubmit="sendBookAMangoLead(event)">
+      <input id="leadName" type="text" placeholder="Full Name" required
+        style="width:100%;padding:15px;margin-bottom:14px;border:1px solid #ddd;border-radius:10px;font-size:16px;">
+
+      <input id="leadPhone" type="tel" placeholder="Phone Number" required
+        style="width:100%;padding:15px;margin-bottom:14px;border:1px solid #ddd;border-radius:10px;font-size:16px;">
+
+      <input id="leadCity" type="text" placeholder="City" required
+        style="width:100%;padding:15px;margin-bottom:14px;border:1px solid #ddd;border-radius:10px;font-size:16px;">
+
+      <select id="leadPackage" required
+        style="width:100%;padding:15px;margin-bottom:14px;border:1px solid #ddd;border-radius:10px;font-size:16px;">
+        <option value="">Select Package</option>
+        <option>Basic Family Package - ₹5,499</option>
+        <option>Premium Orchard Package - ₹8,999</option>
+        <option>Royal Kesar Experience - ₹15,499</option>
+        <option>5 KG Kutchi Kesar Mango Box - ₹849</option>
+        <option>Premium Kesar Mango Dozen Box - ₹599</option>
+      </select>
+
+      <textarea id="leadMessage" placeholder="Any message or delivery location details?" rows="4"
+        style="width:100%;padding:15px;margin-bottom:20px;border:1px solid #ddd;border-radius:10px;font-size:16px;"></textarea>
+
+      <button type="submit"
+        style="width:100%;background:#25D366;color:white;border:none;padding:16px;border-radius:10px;font-size:17px;font-weight:700;cursor:pointer;">
+        Send Reservation on WhatsApp
+      </button>
+    </form>
+  </div>
+</section>
+
+<script>
+function sendBookAMangoLead(event) {
+  event.preventDefault();
+
+  const name = document.getElementById("leadName").value;
+  const phone = document.getElementById("leadPhone").value;
+  const city = document.getElementById("leadCity").value;
+  const packageName = document.getElementById("leadPackage").value;
+  const message = document.getElementById("leadMessage").value;
+
+  const whatsappNumber = "917448425888";
+
+  const text =
+`Hello BookAMango.in,
+
+I want to reserve/order:
+
+Package: ${packageName}
+Name: ${name}
+Phone: ${phone}
+City: ${city}
+Message: ${message}
+
+Please share availability, delivery charges, and payment details.`;
+
+  const url = "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(text);
+  window.open(url, "_blank");
+}
+</script>
+<!-- BOOKAMANGO LEAD FORM END -->
 <script>
 const observer=new IntersectionObserver((entries)=>{entries.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('visible'),i*80);observer.unobserve(e.target);}});},{threshold:.1});
 document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
