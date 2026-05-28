@@ -1797,25 +1797,25 @@ Please share availability, delivery charges, and payment details.`;
   </div>
 </footer>
 
-/* PREMIUM MOBILE CTA */
-.premium-mobile-cta{
-  position:fixed;
-  left:24px;
-  bottom:24px;
-  z-index:9999;
-  display:flex;
-  align-items:center;
-  gap:10px;
-}
+<!-- PREMIUM MOBILE CTA -->
+<div class="premium-mobile-cta">
 
-.premium-mobile-cta a{
-  text-decoration:none;
-  font-size:14px;
-  font-weight:700;
-  padding:13px 18px;
-  border-radius:999px;
-  white-space:nowrap;
- 
+  <a class="cta-wa"
+     href="https://wa.me/917448425888?text=Hello%20BookAMango,%20I%20want%20to%20reserve%20a%20Kutchi%20Kesar%20mango%20tree."
+     target="_blank">
+     💬 WhatsApp
+  </a>
+
+  <a class="cta-reserve" href="#reserve-form">
+     🌳 Reserve Tree
+  </a>
+
+  <a class="cta-call" href="tel:+917448425888">
+     📞 Call
+  </a>
+
+</div>
+  
 <script>
 const observer=new IntersectionObserver((entries)=>{entries.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('visible'),i*80);observer.unobserve(e.target);}});},{threshold:.1});
 document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
