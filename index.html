@@ -88,22 +88,26 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .cta-reserve{color:#fff;background:linear-gradient(135deg,#e8820c,#d36d00);}
 .cta-call{color:#143d2b;background:#fff;}
 
-/* DESKTOP: small button only */
+  /* DESKTOP: small button only */
 @media(min-width:769px){
   .premium-mobile-cta{
     left:24px;
     bottom:24px;
     transform:none;
-    padding:0;
-    background:transparent;
-    border:none;
-    box-shadow:none;
-    backdrop-filter:none;
+    width:auto;
+    padding:8px 10px;
+    border-radius:999px;
   }
 
   .premium-mobile-cta .cta-reserve,
   .premium-mobile-cta .cta-call{
     display:none;
+  }
+
+  .premium-mobile-cta .cta-wa{
+    padding:13px 22px;
+    font-size:14px;
+    border-radius:999px;
   }
 
   .premium-mobile-cta .cta-wa{
