@@ -56,6 +56,85 @@ html{scroll-behavior:smooth;}
 body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--charcoal);overflow-x:hidden;}
 body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:9999;opacity:.5;}
 
+  /* PREMIUM FLOATING CTA */
+.premium-mobile-cta{
+  position:fixed;
+  z-index:9999;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  background:rgba(255,248,238,.92);
+  border:1px solid rgba(200,150,12,.22);
+  backdrop-filter:blur(18px);
+  box-shadow:0 12px 45px rgba(0,0,0,.14);
+  padding:10px;
+  border-radius:999px;
+}
+
+.premium-mobile-cta a{
+  text-decoration:none;
+  font-size:14px;
+  font-weight:700;
+  padding:13px 18px;
+  border-radius:999px;
+  white-space:nowrap;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+}
+
+.cta-wa{color:#fff;background:linear-gradient(135deg,#25D366,#128C7E);}
+.cta-reserve{color:#fff;background:linear-gradient(135deg,#e8820c,#d36d00);}
+.cta-call{color:#143d2b;background:#fff;}
+
+/* DESKTOP: small button only */
+@media(min-width:769px){
+  .premium-mobile-cta{
+    left:24px;
+    bottom:24px;
+    transform:none;
+    padding:0;
+    background:transparent;
+    border:none;
+    box-shadow:none;
+    backdrop-filter:none;
+  }
+
+  .premium-mobile-cta .cta-reserve,
+  .premium-mobile-cta .cta-call{
+    display:none;
+  }
+
+  .premium-mobile-cta .cta-wa{
+    padding:12px 18px;
+    font-size:14px;
+    box-shadow:0 8px 24px rgba(37,211,102,.28);
+  }
+}
+
+/* MOBILE: full CTA bar */
+@media(max-width:768px){
+  .premium-mobile-cta{
+    left:50%;
+    bottom:14px;
+    transform:translateX(-50%);
+    width:92%;
+    justify-content:center;
+    gap:8px;
+    padding:8px;
+  }
+
+  .premium-mobile-cta a{
+    flex:1;
+    font-size:12px;
+    padding:12px 10px;
+  }
+
+  .cta-call{
+    display:none;
+  }
+}
 /* ── NAV ── */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 4rem;display:flex;align-items:center;justify-content:space-between;background:rgba(253,248,240,0.93);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);transition:box-shadow .3s;}
 .nav-logo{font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:700;color:var(--green-deep);text-decoration:none;letter-spacing:-.02em;}
