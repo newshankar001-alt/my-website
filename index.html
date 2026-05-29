@@ -87,22 +87,175 @@
 <meta name="twitter:card" content="summary_large_image">
 
 <meta name="twitter:image" content="https://bookamango.in/images/gallery-harvest-aerial.png">
+<!-- BOOKAMANGO FULL RICH RESULTS SEO SCHEMA START -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "BookAMango — Chauhan Mango Farm",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Mahavir Nagar, near Government High School",
-    "addressLocality": "Khombhdi Moti",
-    "addressRegion": "Gujarat",
-    "postalCode": "370670",
-    "addressCountry": "IN"
-  },
-  "telephone": "+917448425888",
-  "url": "https://bookamango.in"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://bookamango.in/#organization",
+      "name": "BookAMango",
+      "alternateName": "Book A Mango",
+      "url": "https://bookamango.in/",
+      "logo": "https://bookamango.in/images/bookamango-logo.png",
+      "description": "Premium Kutchi Kesar mango tree reservation and farm-to-home mango delivery brand from Kutch, Gujarat.",
+      "telephone": "+91-74484-25888",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-74484-25888",
+        "contactType": "customer support",
+        "areaServed": "IN",
+        "availableLanguage": ["English", "Hindi", "Gujarati"]
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://bookamango.in/#localbusiness",
+      "name": "BookAMango - Chauhan Mango Farm",
+      "image": "https://bookamango.in/images/gallery-harvest-aerial.png",
+      "url": "https://bookamango.in/",
+      "telephone": "+91-74484-25888",
+      "priceRange": "₹₹",
+      "parentOrganization": {
+        "@id": "https://bookamango.in/#organization"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Mahavir Nagar, near Government High School",
+        "addressLocality": "Khombhdi Moti",
+        "addressRegion": "Gujarat",
+        "postalCode": "370670",
+        "addressCountry": "IN"
+      },
+      "description": "Premium Kutchi Kesar mango reservation and farm-to-home mango delivery from Chauhan Mango Farm, Kutch, Gujarat."
+    },
+    {
+      "@type": "Product",
+      "@id": "https://bookamango.in/#product-5kg-kesar-box",
+      "name": "5 KG Kutchi Kesar Mango Box",
+      "image": "https://bookamango.in/images/mango-basket.jpg",
+      "description": "Farm fresh 5 KG Kutchi Kesar mango box, naturally ripened and delivered from Gujarat orchard.",
+      "brand": {
+        "@type": "Brand",
+        "name": "BookAMango"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://bookamango.in/#shop",
+        "priceCurrency": "INR",
+        "price": "849",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://bookamango.in/#product-dozen-box",
+      "name": "Premium Kesar Mango Dozen Box",
+      "image": "https://bookamango.in/images/dozen-box.png",
+      "description": "Premium dozen box of naturally ripened Kutchi Kesar mangoes, ideal for gifting and family enjoyment.",
+      "brand": {
+        "@type": "Brand",
+        "name": "BookAMango"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://bookamango.in/#shop",
+        "priceCurrency": "INR",
+        "price": "599",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://bookamango.in/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How does BookAMango tree reservation work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Customers reserve a seasonal Kutchi Kesar mango tree and receive harvest updates. Mangoes are harvested during the season and delivered fresh to their home."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does mango tree reservation mean legal ownership?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, tree reservation is a seasonal harvest participation experience and does not provide land ownership or permanent tree ownership rights."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if my reserved tree yields less fruit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "BookAMango provides a seasonal harvest assurance. If a reserved tree yields less than expected, the balance may be fulfilled from our reserve orchard stock, subject to package terms and seasonal availability."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you deliver mangoes across India?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "BookAMango offers delivery support across major Indian locations, subject to courier availability, customer location, and seasonal dispatch timelines."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are delivery charges included?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Delivery charges are calculated separately based on customer location, order quantity, and courier availability."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are BookAMango mangoes naturally ripened?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, BookAMango Kutchi Kesar mangoes are naturally ripened and carefully selected for aroma, sweetness, and pulp quality."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://bookamango.in/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://bookamango.in/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Tree Reservation Packages",
+          "item": "https://bookamango.in/#packages"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Order Mango Boxes",
+          "item": "https://bookamango.in/#shop"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "FAQ",
+          "item": "https://bookamango.in/#faq"
+        }
+      ]
+    }
+  ]
 }
+</script>
+<!-- BOOKAMANGO FULL RICH RESULTS SEO SCHEMA END -->
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
