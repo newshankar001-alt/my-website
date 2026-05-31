@@ -1544,29 +1544,160 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.6);padding:4rem 0 2rem
   </div>
 </section>
 
-  </section>
+<!-- PREMIUM GOOGLE REVIEW CTA SECTION START -->
+<section class="review-cta-premium" id="google-review">
+  <div class="review-cta-inner">
+    
+    <div class="review-badge">Customer Trust</div>
 
-<!-- REVIEW CTA SECTION START -->
-<section class="review-cta" style="padding:70px 20px;background:#fffaf0;text-align:center;">
-  <div style="max-width:850px;margin:auto;">
-    <p style="color:#e8820c;letter-spacing:2px;font-size:13px;text-transform:uppercase;font-weight:700;">
-      Customer Love
+    <h2>Share Your BookAMango Experience</h2>
+
+    <p>
+      Loved our farm-fresh Kutchi Kesar mangoes? Your review helps more families
+      discover authentic mangoes directly from our orchard.
     </p>
-    <h2 style="font-family:Georgia,serif;color:#1a3a1f;font-size:clamp(30px,5vw,44px);margin:10px 0;">
-      Love Your BookAMango Experience?
-    </h2>
-    <p style="color:#6b6055;line-height:1.8;font-size:16px;margin-bottom:25px;">
-      Your review helps more families discover authentic farm-fresh Kutchi Kesar mangoes directly from our orchard.
-    </p>
-    <a href="https://maps.app.goo.gl/fEQf4n6eQxisKHLp9"
+
+    <div class="review-stars">★★★★★</div>
+
+    <a href="https://maps.app.goo.gl/fEQf4n6eQxisKHLP9"
        target="_blank"
-       style="display:inline-block;background:#1a3a1f;color:white;text-decoration:none;padding:15px 30px;border-radius:999px;font-weight:700;">
-       ⭐ Leave a Google Review
+       rel="noopener"
+       class="review-premium-btn">
+      ⭐ Leave a Google Review
     </a>
+
+    <div class="review-note">
+      Your feedback helps us grow trust, tradition, and farm-to-home freshness.
+    </div>
+
   </div>
 </section>
-<!-- REVIEW CTA SECTION END -->
+<!-- PREMIUM GOOGLE REVIEW CTA SECTION END -->
 
+<style>
+.review-cta-premium{
+  padding:90px 20px;
+  background:
+    radial-gradient(circle at top left, rgba(232,130,12,.12), transparent 35%),
+    linear-gradient(135deg,#fffaf0 0%,#f8efd9 45%,#fffaf0 100%);
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+}
+
+.review-cta-premium::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg,transparent,rgba(26,58,31,.05),transparent);
+  pointer-events:none;
+}
+
+.review-cta-inner{
+  max-width:920px;
+  margin:0 auto;
+  position:relative;
+  z-index:1;
+  padding:55px 35px;
+  border-radius:32px;
+  background:rgba(255,255,255,.72);
+  border:1px solid rgba(200,150,12,.24);
+  box-shadow:0 28px 80px rgba(26,58,31,.13);
+  backdrop-filter:blur(14px);
+}
+
+.review-badge{
+  display:inline-block;
+  color:#e8820c;
+  font-size:13px;
+  font-weight:800;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  margin-bottom:18px;
+}
+
+.review-cta-premium h2{
+  font-family:Georgia, 'Times New Roman', serif;
+  color:#1a3a1f;
+  font-size:clamp(34px,5vw,62px);
+  line-height:1.08;
+  margin:0 0 18px;
+  letter-spacing:-1px;
+}
+
+.review-cta-premium p{
+  max-width:720px;
+  margin:0 auto 22px;
+  color:#5f5a4d;
+  font-size:18px;
+  line-height:1.8;
+}
+
+.review-stars{
+  color:#e8820c;
+  font-size:24px;
+  letter-spacing:7px;
+  margin:12px 0 30px;
+}
+
+.review-premium-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  background:linear-gradient(135deg,#143d2b,#1f5b3d);
+  color:#fff;
+  text-decoration:none;
+  padding:17px 36px;
+  border-radius:999px;
+  font-size:17px;
+  font-weight:800;
+  box-shadow:0 16px 35px rgba(20,61,43,.28);
+  transition:all .25s ease;
+}
+
+.review-premium-btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 22px 45px rgba(20,61,43,.34);
+  background:linear-gradient(135deg,#1f5b3d,#143d2b);
+}
+
+.review-note{
+  margin-top:22px;
+  color:#7a715f;
+  font-size:14px;
+  font-style:italic;
+}
+
+@media(max-width:768px){
+  .review-cta-premium{
+    padding:65px 16px;
+  }
+
+  .review-cta-inner{
+    padding:40px 22px;
+    border-radius:24px;
+  }
+
+  .review-cta-premium p{
+    font-size:15.5px;
+    line-height:1.7;
+  }
+
+  .review-stars{
+    font-size:20px;
+    letter-spacing:4px;
+  }
+
+  .review-premium-btn{
+    width:100%;
+    padding:16px 22px;
+    font-size:16px;
+  }
+}
+</style>
+<!-- PREMIUM GOOGLE REVIEW CTA SECTION STYLE END -->
+  
 <!-- GALLERY -->
 <section class="gallery-section" id="gallery">
   <div class="container">
