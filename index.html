@@ -272,6 +272,84 @@ html{scroll-behavior:smooth;}
 body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--charcoal);overflow-x:hidden;}
 body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:9999;opacity:.5;}
 
+  /* PREMIUM SEO INTRO */
+.seo-intro-section{
+  background:linear-gradient(180deg,#fffaf0 0%,#f8efdc 100%);
+  padding:70px 20px;
+  border-top:1px solid rgba(200,150,12,.18);
+  border-bottom:1px solid rgba(200,150,12,.18);
+}
+
+.seo-intro-box{
+  max-width:1100px;
+  margin:0 auto;
+  background:rgba(255,255,255,.78);
+  border:1px solid rgba(200,150,12,.22);
+  border-radius:28px;
+  padding:42px;
+  box-shadow:0 22px 55px rgba(26,58,31,.08);
+}
+
+.seo-kicker{
+  color:#e8820c;
+  font-size:.82rem;
+  font-weight:800;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  margin-bottom:14px;
+}
+
+.seo-intro-box h2{
+  color:#143d2b;
+  font-size:clamp(2rem,4vw,3.4rem);
+  line-height:1.08;
+  margin-bottom:18px;
+}
+
+.seo-intro-box p{
+  color:#5d5548;
+  font-size:1.05rem;
+  line-height:1.8;
+  max-width:920px;
+}
+
+.seo-keyword-line{
+  margin-top:24px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.seo-keyword-line span{
+  background:#143d2b;
+  color:#fff8e8;
+  border:1px solid rgba(232,130,12,.35);
+  padding:10px 15px;
+  border-radius:999px;
+  font-size:.85rem;
+  font-weight:700;
+}
+
+@media(max-width:768px){
+  .seo-intro-section{
+    padding:45px 16px;
+  }
+
+  .seo-intro-box{
+    padding:28px 22px;
+    border-radius:22px;
+  }
+
+  .seo-intro-box p{
+    font-size:.98rem;
+    line-height:1.7;
+  }
+
+  .seo-keyword-line span{
+    font-size:.78rem;
+    padding:9px 12px;
+  }
+}
   /* PREMIUM FLOATING CTA */
 .premium-mobile-cta{
   position:fixed;
@@ -1098,7 +1176,33 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.6);padding:4rem 0 2rem
     </div>
   </div>
 </section>
+  
+<!-- PREMIUM SEO INTRO START -->
+<section class="seo-intro-section">
+  <div class="seo-intro-box fade-in">
+    <div class="seo-kicker">Premium Kutch Kesar Mangoes</div>
 
+    <h2>Reserve Premium Kutchi Kesar Mango Trees & Order Farm-Fresh Mangoes Online</h2>
+
+    <p>
+      BookAMango brings you naturally grown Kutchi Kesar mangoes from our orchard in Kutch, Gujarat.
+      Customers can reserve their own mango tree, receive seasonal harvest updates, and enjoy premium
+      farm-to-home Kesar mango delivery during the harvest season. From mango tree reservation to
+      online Kesar mango box orders, every BookAMango experience is designed around freshness,
+      trust, and authentic orchard quality.
+    </p>
+
+    <div class="seo-keyword-line">
+      <span>Kesar Mangoes Online</span>
+      <span>Mango Tree Reservation</span>
+      <span>Kutch Kesar Mangoes</span>
+      <span>Kutchi Kesar Mangoes</span>
+      <span>Farm Fresh Mango Delivery</span>
+    </div>
+  </div>
+</section>
+<!-- PREMIUM SEO INTRO END -->
+  
 <!-- RESERVE YOUR TREE -->
 <section class="reserve-section" id="tree">
   <div class="container">
